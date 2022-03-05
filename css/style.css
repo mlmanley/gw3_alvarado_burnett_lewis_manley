@@ -1,0 +1,327 @@
+/*========== CSS Reset ==========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=================================
+Custom CSS
+==================================*/
+
+
+/*======= Universal Styling =======
+==================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: .5em 2%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*======= Hdr/Menu Styling =======*/
+
+.logo {
+	float: left;
+	width: 35%;
+	vertical-align: top;
+}
+
+#navright {
+	float: right;
+	width: 60%;
+	vertical-align: top;
+	text-align: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .875em;
+}
+
+
+/*======= Main Styling =======*/
+
+
+
+
+
+
+
+/*======= Footer Styling =======*/
+
+
+
+
+
+
+
+/*=================================
+Subpage 1 Styling
+==================================*/
+
+
+
+
+
+
+
+/*=================================
+Subpage 2 Styling
+==================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================
+Media Querries
+==================================*/
+
+
+/*=========== Small Screens ===========*/
+
+@media only screen and (min-width: 320px) {
+
+	#hamitems {
+		width: 100%;
+		position: sticky;
+		top: 0;
+	}
+	
+	#hamitems a {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		padding: .625em;
+		color: #212226;
+		font-weight: bold;
+		text-decoration: none;
+		text-align: right;
+	}
+	
+	#hamitems a:hover {
+		opacity: 80%;
+		font-weight: bolder;
+	}
+	
+	#navright label {
+		display: inline-block;
+		color: #212226;
+		font-size: 2.5em;
+		padding: .5em 3% 0;
+	}
+	
+	#hamitems {
+		display: none;
+	}
+	
+	#navright input:checked ~ #hamitems {
+		display: block;
+	}
+	
+	#hamburger {
+		display: none;
+	}
+
+
+
+
+/*----Subpage 1 Code for 320MQ----*/
+
+
+
+
+
+
+
+/*----Subpage 2 Code for 320MQ----*/
+
+
+
+
+
+
+}
+
+
+/*=========== Small Devices ===========*/
+
+@media only screen and (min-width: 576px) {
+
+
+
+
+
+
+
+/*----Subpage 1 Code for 576MQ----*/
+
+
+
+
+
+
+
+/*----Subpage 2 Code for 576MQ----*/
+
+
+
+
+
+
+}
+
+
+
+/*=========== Medium Devices ===========*/
+
+@media only screen and (min-width: 768px) {
+
+	#hamitems {
+		padding: 2em 0 1em;
+		display: flex;
+	}
+
+	#hamitems a {
+		font-weight: bolder;
+		flex-grow: 1;
+		flex-basis: 0;
+		justify-content: flex-end;
+	}
+
+	#navright label, #hamburger {
+		display: none;
+	}
+
+	#navright {
+		padding: .2em 2.5%;
+	}
+
+
+
+/*----Subpage 1 Code for 768MQ----*/
+
+
+
+
+
+
+
+/*----Subpage 2 Code for 768MQ----*/
+
+
+
+
+	
+
+}
+
+
+
+/*=========== Large Devices ===========*/
+
+@media only screen and (min-width: 992px) {
+
+
+
+
+
+
+
+/*----Subpage 1 Code for 992MQ----*/
+
+
+
+
+
+
+
+/*----Subpage 2 Code for 992MQ----*/
+
+
+
+
+
+
+}
+
+
+
+/*========== Extra Lg Devices ==========*/
+
+@media only screen and (min-width: 1200px) {
+
+
+
+
+
+
+
+/*----Subpage 1 Code for 1200MQ----*/
+
+
+
+
+
+
+
+/*----Subpage 2 Code for 1200MQ----*/
+
+
+
+
+
+
+}
