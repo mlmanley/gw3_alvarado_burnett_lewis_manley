@@ -87,8 +87,12 @@ body {
 /*======= Main Styling =======*/
 
 
-/*======= Seasons Recap Styling =======*/
+/*======= Previously OnStyling =======*/
 
+.maira {
+	max-width: 600px;
+	margin: 0 auto;
+}
 
 
 
