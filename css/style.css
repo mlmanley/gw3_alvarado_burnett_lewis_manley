@@ -103,17 +103,37 @@ header {
 
 /*======= Main Styling =======*/
 
-.mbhome img[alt="Stranger Things Collage"] {
-	max-width: 100%;
+.streamlink {
+	flex: 1;
 }
 
-.mbhome .stream button {
-	font-size: 1.25em;
+.homestream {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 25vh;
+	background-image: url("/images/hero.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.streamlink button {
+	position: sticky;
+	bottom: 0;
+	width: 130%;
+	font-size: .625em;
 	font-weight: bold;
 	letter-spacing: .07em;
 	background: #c1dadc;
-	border-radius: .5em;
-	padding: .5em 5%;
+	border: .09em solid #000000;
+	border-radius: .4em;
+	padding: .3em 5%;
+}
+
+.mbhome aside {
+	display: block;
+	margin: 0;
 }
 
 
@@ -268,7 +288,7 @@ Media Querries
 
 	#hamitems a {
 		padding: 0 3%;
-		color: #c1dadc;
+		color: #86bdc2;
 		font-weight: bolder;
 		flex-grow: 1;
 		flex-basis: 0;
