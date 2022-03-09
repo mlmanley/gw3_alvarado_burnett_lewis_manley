@@ -58,11 +58,19 @@ Custom CSS
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: .5em 2%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 5em;
+}
+
+main {
+    padding: .5em 2%;
 }
 
 
@@ -84,15 +92,15 @@ body {
 }
 
 .navanim {
-	animation: grow 1.7s backwards ease;
+	animation: grow 1s backwards ease;
 }
 
 @keyframes grow {
     from {
-      transform: translateY(-100%);
+      transform: translateX(100%);
     }
     to {
-      transform: translateY(0%);
+      transform: translateX(0%);
     }
 }
 
@@ -161,7 +169,7 @@ Media Querries
 		box-sizing: border-box;
 		display: block;
 		width: 100%;
-		padding: .625em;
+		padding: 1em 7%;
 		color: #212226;
 		font-weight: bold;
 		text-decoration: none;
@@ -177,7 +185,7 @@ Media Querries
 		display: inline-block;
 		color: #212226;
 		font-size: 2.5em;
-		padding: .5em 3% 0;
+		padding: .5em 7% 0;
 	}
 	
 	#hamitems {
@@ -191,7 +199,6 @@ Media Querries
 	#hamburger {
 		display: none;
 	}
-
 
 
 
@@ -247,11 +254,12 @@ Media Querries
 @media only screen and (min-width: 768px) {
 
 	#hamitems {
-		padding: 2em 0 1em;
 		display: flex;
 	}
 
 	#hamitems a {
+		padding: 0 3%;
+		color: #c1dadc;
 		font-weight: bolder;
 		flex-grow: 1;
 		flex-basis: 0;
@@ -262,8 +270,25 @@ Media Querries
 		display: none;
 	}
 
+	header {
+		background-color: #000000;
+	}
+
 	#navright {
-		padding: .2em 2.5%;
+		padding: 2.25em 7%;
+	}
+
+	.navanim {
+		animation: grow 1.7s backwards ease;
+	}
+	
+	@keyframes grow {
+		from {
+		  transform: translateY(-100%);
+		}
+		to {
+		  transform: translateY(0%);
+		}
 	}
 
 
