@@ -83,6 +83,19 @@ body {
 	font-size: .875em;
 }
 
+.navanim {
+	animation: grow 1.7s backwards ease;
+}
+
+@keyframes grow {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+}
+
 
 /*======= Main Styling =======*/
 
