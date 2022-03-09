@@ -69,10 +69,6 @@ header {
 	height: 5em;
 }
 
-main {
-    padding: .5em 2%;
-}
-
 
 /*======= Hdr/Menu Styling =======*/
 
@@ -106,6 +102,19 @@ main {
 
 
 /*======= Main Styling =======*/
+
+.mbhome img[alt="Stranger Things Collage"] {
+	max-width: 100%;
+}
+
+.mbhome .stream button {
+	font-size: 1.25em;
+	font-weight: bold;
+	letter-spacing: .07em;
+	background: #c1dadc;
+	border-radius: .5em;
+	padding: .5em 5%;
+}
 
 
 /*======= Previously OnStyling =======*/
