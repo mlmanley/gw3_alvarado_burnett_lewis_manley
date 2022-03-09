@@ -83,16 +83,13 @@ body {
 	font-size: .875em;
 }
 
+/*======= Universal  Styling =======*/
+
 
 /*======= Main Styling =======*/
 
 
-/*======= Previously OnStyling =======*/
 
-.maira {
-	max-width: 600px;
-	margin: 0 auto;
-}
 
 
 
@@ -115,14 +112,27 @@ Subpage 1 Styling
 
 
 /*=================================
-Subpage 2 Styling
+Previously On  Styling
 ==================================*/
 
 
+.maira {
+	max-width: 900px;
+	margin: 0 auto;
+}
 
+.maira h1 {
+	margin: 100px 0 40px 0;
+}
 
+.maira p {
+	padding: 10px 0;
+	line-height: 1.4;
+}
 
-
+.maira img {
+	max-width: 100%;
+}
 
 
 
@@ -253,6 +263,11 @@ Media Querries
 		padding: .2em 2.5%;
 	}
 
+	.season-one,
+	.season-two,
+	.season-three {
+		display: flex;
+	}
 
 
 /*----Subpage 1 Code for 768MQ----*/
