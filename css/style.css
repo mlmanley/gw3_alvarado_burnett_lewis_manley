@@ -267,6 +267,7 @@ Media Querries
 	.season-two,
 	.season-three {
 		display: flex;
+		flex-direction: row-reverse;
 	}
 
 
