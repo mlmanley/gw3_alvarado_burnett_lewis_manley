@@ -111,6 +111,7 @@ p {
 }
 
 /*======= Universal  Styling =======*/
+
 .navanim {
 	animation: grow 1s backwards ease;
 }
@@ -126,6 +127,11 @@ p {
 
 
 /*======= Main Styling =======*/
+
+.mbhome {
+	display: block;
+	position: fixed;
+}
 
 .streamlink {
 	flex: 1;
@@ -238,6 +244,9 @@ Media Querries
 		width: 100%;
 		position: sticky;
 		top: 0;
+		background-color: #ffffff;
+		opacity: 90%;
+		z-index: 2;
 	}
 	
 	#hamitems a {
@@ -336,6 +345,7 @@ Media Querries
 
 	#hamitems {
 		display: flex;
+		background-color: #000000;
 	}
 
 	#hamitems a {
