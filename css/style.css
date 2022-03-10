@@ -76,10 +76,20 @@ h4 {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
 p {
 	font-family: 'Sarala', sans-serif;
-
 }
+
 
 
 /*======= Hdr/Menu Styling =======*/
@@ -99,9 +109,7 @@ p {
 	font-size: .875em;
 }
 
-<<<<<<< HEAD
 /*======= Universal  Styling =======*/
-=======
 .navanim {
 	animation: grow 1s backwards ease;
 }
@@ -114,7 +122,6 @@ p {
       transform: translateX(0%);
     }
 }
->>>>>>> d03a40216815a02f0535e50d7ef3d3529b560bd1
 
 
 /*======= Main Styling =======*/
@@ -370,6 +377,7 @@ Media Querries
 	.season-three {
 		display: flex;
 		flex-direction: row-reverse;
+		margin: 20px 0 10px 0;
 	}
 
 
