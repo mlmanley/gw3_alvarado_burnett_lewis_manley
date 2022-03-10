@@ -69,6 +69,18 @@ header {
 	height: 5em;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+	font-family: 'Sarala', sans-serif;
+
+}
+
 
 /*======= Hdr/Menu Styling =======*/
 
@@ -176,6 +188,7 @@ Previously On  Styling
 
 .maira h1 {
 	margin: 25px 0;
+	color:#9D0004
 }
 
 .maira h2 {
