@@ -59,12 +59,59 @@ Custom CSS
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: .5em 2%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+	font-family: 'Sarala', sans-serif;
 }
+
+header {
+	width: 100%;
+	height: 5em;
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+	color: #9d0004;
+}
+
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 3.68em;
+	font-weight: medium;
+	color: #000000;
+}
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 3.35em;
+	font-weight: normal;
+	color: #000000;
+}
+
+h4 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 3.01em;
+	font-weight: lighter;
+	color: #000000;
+}
+
+h5 {
+	font-family: 'Sarala', sans-serif;
+	font-size: 1.67em;
+	color: #000000;
+}
+
+p {
+	font-family: 'Sarala', sans-serif;
+	font-size: 1.25em;
+	line-height: 200%;
+	color: #000000;
+}
+
 
 
 /*======= Hdr/Menu Styling =======*/
@@ -84,28 +131,71 @@ body {
 	font-size: .875em;
 }
 
+/*======= Universal  Styling =======*/
+
 .navanim {
-	animation: grow 1.7s backwards ease;
+	animation: grow 1s backwards ease;
 }
 
 @keyframes grow {
     from {
-      transform: translateY(-100%);
+      transform: translateX(100%);
     }
     to {
-      transform: translateY(0%);
+      transform: translateX(0%);
     }
 }
 
 
-/*======= Main Styling =======*/
+/*======= Home Styling =======*/
 
+.mbhome {
+	display: block;
+	position: fixed;
+}
 
-/*======= Previously OnStyling =======*/
+.streamlink {
+	flex: 1;
+}
 
-.maira {
-	max-width: 600px;
-	margin: 0 auto;
+.homestream {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	min-height: 56vh;
+	background: #000000 url("/images/hero.jpg") no-repeat center;
+	background-size: contain;
+	padding: 3.5em 0;
+	text-align: center;
+	text-indent: 40%;
+}
+
+.streamlink button {
+	position: sticky;
+	bottom: 4rem;
+	width: 18%;
+	font-size: .563em;
+	font-weight: bold;
+	background: #c1dadc;
+	border: .09em solid #000000;
+	border-radius: .4em;
+	padding: .43em 0;
+}
+
+.mbhome aside {
+	display: block;
+}
+
+.mbsmpic h1 {
+	padding: 1.325em 0;
+}
+
+.mbsmpic {
+	text-align: center;
+}
+
+figure img[alt="Season 4 Pic"] {
+	max-width: 85%;
 }
 
 
@@ -149,15 +239,43 @@ About
 
 
 /*=================================
-Subpage 2 Styling
+Previously On  Styling
 ==================================*/
 
 
+.maira {
+	max-width: 1000px;
+	padding: 40px;
+	margin: 0 auto;
+}
 
+.maira h1 {
+	margin: 60px 0 40px 0;
+	color:#9D0004;
+}
 
+.maira h2 {
+	margin: 10px 0;
+}
 
+.maira p {
+	padding: 10px 0;
+	line-height: 1.6;
+}
 
+.maira img {
+	max-width: 100%;
+	margin: 10px 0 15px 0;
+}
 
+.button-recap {
+    background-color: #C1DADC;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+	max-width: 200px;
+	margin-top: 20px;
+}
 
 
 
@@ -176,13 +294,16 @@ Media Querries
 		width: 100%;
 		position: sticky;
 		top: 0;
+		background-color: #ffffff;
+		opacity: 90%;
+		z-index: 2;
 	}
 	
 	#hamitems a {
 		box-sizing: border-box;
 		display: block;
 		width: 100%;
-		padding: .625em;
+		padding: 1em 7%;
 		color: #212226;
 		font-weight: bold;
 		text-decoration: none;
@@ -198,7 +319,7 @@ Media Querries
 		display: inline-block;
 		color: #212226;
 		font-size: 2.5em;
-		padding: .5em 3% 0;
+		padding: .5em 7% 0;
 	}
 	
 	#hamitems {
@@ -212,7 +333,6 @@ Media Querries
 	#hamburger {
 		display: none;
 	}
-
 
 
 
@@ -238,11 +358,18 @@ Media Querries
 
 @media only screen and (min-width: 576px) {
 
-
-
-
-
-
+	.homestream {
+		height: 93vh;
+		background-size: contain;
+		padding: 5em 0;
+	}
+	
+	.streamlink button {
+		width: 20%;
+		font-size: .75em;
+		letter-spacing: .07em;
+		padding: .4em 2%;
+	}
 
 /*----Subpage 1 Code for 576MQ----*/
 
@@ -268,11 +395,13 @@ Media Querries
 @media only screen and (min-width: 768px) {
 
 	#hamitems {
-		padding: 2em 0 1em;
 		display: flex;
+		background-color: #000000;
 	}
 
 	#hamitems a {
+		padding: 0 3%;
+		color: #86bdc2;
 		font-weight: bolder;
 		flex-grow: 1;
 		flex-basis: 0;
@@ -283,12 +412,40 @@ Media Querries
 		display: none;
 	}
 
+	header {
+		background-color: #000000;
+	}
+
 	#navright {
-		padding: .2em 2.5%;
+		padding: 2.25em 7%;
+	}
+
+	.navanim {
+		animation: grow 1.7s backwards ease;
+	}
+	
+	@keyframes grow {
+		from {
+		  transform: translateY(-100%);
+		}
+		to {
+		  transform: translateY(0%);
+		}
+	}
+
+	.homestream {
+		height: 100vh;
+		padding: 6em 0;
+	}
+	
+	.streamlink button {
+		width: 18%;
+		font-size: .875em;
+		padding: .4em 1%;
 	}
 
 
-
+	
 /*----Subpage 1 Code for 768MQ----*/
 
 
@@ -299,12 +456,43 @@ Media Querries
 
 /*----Subpage 2 Code for 768MQ----*/
 
+@media only screen and (min-width: 768px){
+	
+	.maira {
+		padding: 0 40px;
+	}
+	
+	.season-one,
+	.season-two,
+	.season-three {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+
+	.seasons {
+		margin: 42px 0;
+	}
+
+	.maira article {
+		max-width: 60%;
+		padding-right: 50px;
+	}
+
+	.maira aside {
+		padding-left: 10px;
+	}
+
+	.maira img {
+		max-width: 370px;
+	}
+
+}
 
 
 
 	
 
-}
 
 
 
@@ -312,6 +500,21 @@ Media Querries
 
 @media only screen and (min-width: 992px) {
 
+	.maira article {
+		max-width: 60%;
+		padding-right: 80px;
+	}
+	.homestream {
+		background-size: cover;
+		padding: 3em 0;
+		text-indent: 45%;
+	}
+	
+	.streamlink button {
+		width: 20%;
+		font-size: 1.25em;
+		letter-spacing: .1em;
+	}
 
 
 
@@ -341,7 +544,15 @@ Media Querries
 
 @media only screen and (min-width: 1200px) {
 
-
+	.homestream {
+		min-height: 60vh;
+		text-indent: 43%;
+	}
+	
+	.streamlink button {
+		width: 19%;
+		font-size: 1.375em;
+	}
 
 
 
