@@ -169,12 +169,17 @@ Previously On  Styling
 
 
 .maira {
-	max-width: 900px;
+	max-width: 1000px;
+	padding: 10px;
 	margin: 0 auto;
 }
 
 .maira h1 {
-	margin: 100px 0 40px 0;
+	margin: 25px 0;
+}
+
+.maira h2 {
+	margin: 10px 0;
 }
 
 .maira p {
@@ -183,8 +188,11 @@ Previously On  Styling
 }
 
 .maira img {
-	max-width: 100%;
+	max-width: 300px;
+	margin: 10px 0 15px 0;
 }
+
+
 
 
 
@@ -332,14 +340,7 @@ Media Querries
 		}
 	}
 
-	.season-one,
-	.season-two,
-	.season-three {
-		display: flex;
-		flex-direction: row-reverse;
-	}
-
-
+	
 /*----Subpage 1 Code for 768MQ----*/
 
 
@@ -350,12 +351,18 @@ Media Querries
 
 /*----Subpage 2 Code for 768MQ----*/
 
+@media only screen and (min-width: 768px){
+	.season-one,
+	.season-two,
+	.season-three {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 
 
 
 	
 
-}
 
 
 
