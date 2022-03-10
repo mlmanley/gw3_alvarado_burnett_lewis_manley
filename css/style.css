@@ -61,7 +61,8 @@ Custom CSS
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+	font-family: 'Sarala', sans-serif;
 }
 
 header {
@@ -281,11 +282,18 @@ Media Querries
 
 @media only screen and (min-width: 576px) {
 
-
-
-
-
-
+	.homestream {
+		height: 50vh;
+		background-size: contain;
+		padding: 8.9em 0;
+		text-align: center;
+		text-indent: 40%;
+	}
+	
+	.streamlink button {
+		width: 22%;
+		font-size: .75em;
+	}
 
 /*----Subpage 1 Code for 576MQ----*/
 
