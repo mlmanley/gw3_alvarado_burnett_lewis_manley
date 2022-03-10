@@ -188,13 +188,13 @@ Previously On  Styling
 
 .maira {
 	max-width: 1000px;
-	padding: 10px;
+	padding: 40px;
 	margin: 0 auto;
 }
 
 .maira h1 {
-	margin: 25px 0;
-	color:#9D0004
+	margin: 60px 0 40px 0;
+	color:#9D0004;
 }
 
 .maira h2 {
@@ -203,16 +203,22 @@ Previously On  Styling
 
 .maira p {
 	padding: 10px 0;
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 .maira img {
-	max-width: 300px;
+	max-width: 100%;
 	margin: 10px 0 15px 0;
 }
 
-
-
+.button-recap {
+    background-color: #C1DADC;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+	max-width: 200px;
+	margin-top: 20px;
+}
 
 
 
@@ -371,13 +377,37 @@ Media Querries
 /*----Subpage 2 Code for 768MQ----*/
 
 @media only screen and (min-width: 768px){
+	
+	.maira {
+		padding: 0 40px;
+	}
+	
 	.season-one,
 	.season-two,
 	.season-three {
 		display: flex;
 		flex-direction: row-reverse;
-		margin: 20px 0 10px 0;
+		justify-content: center;
 	}
+
+	.seasons {
+		margin: 42px 0;
+	}
+
+	.maira article {
+		max-width: 60%;
+		padding-right: 50px;
+	}
+
+	.maira aside {
+		padding-left: 10px;
+	}
+
+	.maira img {
+		max-width: 370px;
+	}
+
+}
 
 
 
@@ -390,7 +420,10 @@ Media Querries
 
 @media only screen and (min-width: 992px) {
 
-
+	.maira article {
+		max-width: 60%;
+		padding-right: 80px;
+	}
 
 
 
