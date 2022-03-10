@@ -399,6 +399,7 @@ Media Querries
 	.homestream {
 		background-size: cover;
 		padding: 3em 0;
+		text-indent: 45%;
 	}
 	
 	.streamlink button {
@@ -437,6 +438,7 @@ Media Querries
 
 	.homestream {
 		min-height: 60vh;
+		text-indent: 43%;
 	}
 	
 	.streamlink button {
