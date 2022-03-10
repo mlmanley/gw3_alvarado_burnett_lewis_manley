@@ -61,7 +61,8 @@ Custom CSS
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+	font-family: 'Sarala', sans-serif;
 }
 
 header {
@@ -298,11 +299,17 @@ Media Querries
 
 @media only screen and (min-width: 576px) {
 
-
-
-
-
-
+	.homestream {
+		height: 50vh;
+		background-size: contain;
+		padding: 8.9em 0;
+	}
+	
+	.streamlink button {
+		width: 20%;
+		font-size: .75em;
+		padding: .4em 2%;
+	}
 
 /*----Subpage 1 Code for 576MQ----*/
 
@@ -365,6 +372,17 @@ Media Querries
 		}
 	}
 
+	.homestream {
+		padding: 6em 0;
+	}
+	
+	.streamlink button {
+		width: 18%;
+		font-size: .875em;
+		padding: .4em 1%;
+	}
+
+
 	
 /*----Subpage 1 Code for 768MQ----*/
 
@@ -424,6 +442,18 @@ Media Querries
 		max-width: 60%;
 		padding-right: 80px;
 	}
+	.homestream {
+		background-size: cover;
+		padding: 3em 0;
+		text-indent: 45%;
+	}
+	
+	.streamlink button {
+		width: 20%;
+		font-size: 1.25em;
+		letter-spacing: .1em;
+	}
+
 
 
 
@@ -452,7 +482,15 @@ Media Querries
 
 @media only screen and (min-width: 1200px) {
 
-
+	.homestream {
+		min-height: 60vh;
+		text-indent: 43%;
+	}
+	
+	.streamlink button {
+		width: 19%;
+		font-size: 1.375em;
+	}
 
 
 
