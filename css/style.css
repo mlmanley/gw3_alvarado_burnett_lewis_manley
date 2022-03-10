@@ -436,19 +436,13 @@ Media Querries
 @media only screen and (min-width: 1200px) {
 
 	.homestream {
-		height: 50vh;
-		background-size: cover;
-		padding: 3em 0;
-		text-align: center;
-		text-indent: 40%;
+		min-height: 60vh;
 	}
 	
 	.streamlink button {
-		width: 22%;
-		font-size: .75em;
+		width: 19%;
+		font-size: 1.375em;
 	}
-
-
 
 
 
