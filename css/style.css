@@ -132,34 +132,33 @@ p {
 
 .homestream {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	height: 25vh;
-	background-image: url("/images/hero.jpg");
+	align-items: flex-end;
+	min-height: 50vh;
+	background: #000000 url("/images/hero.jpg") no-repeat center;
 	background-size: contain;
-	background-repeat: no-repeat;
+	padding: 3.5em 0;
+	text-align: center;
+	text-indent: 40%;
 }
 
 .streamlink button {
 	position: sticky;
-	bottom: 0;
-	width: 130%;
+	bottom: 4rem;
+	width: 30%;
 	font-size: .625em;
 	font-weight: bold;
 	letter-spacing: .07em;
 	background: #c1dadc;
 	border: .09em solid #000000;
 	border-radius: .4em;
-	padding: .3em 5%;
+	padding: .4em 4%;
 }
 
 .mbhome aside {
 	display: block;
 	margin: 0;
 }
-
-
 
 
 
