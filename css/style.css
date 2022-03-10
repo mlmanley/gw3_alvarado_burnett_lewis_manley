@@ -141,7 +141,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	min-height: 45vh;
+	min-height: 56vh;
 	background: #000000 url("/images/hero.jpg") no-repeat center;
 	background-size: contain;
 	padding: 3.5em 0;
@@ -308,7 +308,7 @@ Media Querries
 @media only screen and (min-width: 576px) {
 
 	.homestream {
-		height: 59vh;
+		height: 93vh;
 		background-size: contain;
 		padding: 5em 0;
 	}
@@ -383,7 +383,7 @@ Media Querries
 	}
 
 	.homestream {
-		height: 65vh;
+		height: 100vh;
 		padding: 6em 0;
 	}
 	
