@@ -149,11 +149,6 @@ p {
 
 /*======= Home Styling =======*/
 
-.mbhome {
-	display: block;
-	position: fixed;
-}
-
 .streamlink {
 	flex: 1;
 }
@@ -162,7 +157,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	min-height: 56vh;
+	height: 40vh;
 	background: #000000 url("/images/hero.jpg") no-repeat center;
 	background-size: contain;
 	padding: 3.5em 0;
@@ -182,12 +177,13 @@ p {
 	padding: .43em 0;
 }
 
-.mbhome aside {
+.mbsmpic {
 	display: block;
 }
 
 .mbsmpic h1 {
 	padding: 1.325em 0;
+	font-size: larger;
 }
 
 .mbsmpic {
@@ -195,14 +191,28 @@ p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 85%;
+	max-width: 65%;
+}
+
+.mbsmpic figcaption {
+	font-size: small;
+	padding: .2em 0 1em;
+}
+
+.mbhome article p {
+	font-size: medium;
+	padding: .5em 10% .5em;
 }
 
 
 
 /*======= Footer Styling =======*/
 
-
+footer {
+	background-color: #000000;
+	height: 10em;
+	margin: 1em 0 0;
+}
 
 
 
@@ -360,7 +370,7 @@ Media Querries
 @media only screen and (min-width: 576px) {
 
 	.homestream {
-		height: 93vh;
+		height: 57vh;
 		background-size: contain;
 		padding: 5em 0;
 	}
@@ -435,7 +445,7 @@ Media Querries
 	}
 
 	.homestream {
-		height: 100vh;
+		height: 60vh;
 		padding: 6em 0;
 	}
 	
@@ -502,9 +512,10 @@ Media Querries
 @media only screen and (min-width: 992px) {
 
 	.maira article {
-		max-width: 60%;
+		max-width: 85%;
 		padding-right: 80px;
 	}
+
 	.homestream {
 		background-size: cover;
 		padding: 3em 0;
