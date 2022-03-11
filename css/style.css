@@ -212,6 +212,10 @@ figure img[alt="Season 4 Pic"] {
 About
 ==================================*/
 
+.about  {
+	padding: 40px;
+}
+
 .image-list-small img,
 .about-details {
 	padding: 30px;
