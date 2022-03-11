@@ -117,17 +117,17 @@ p {
 
 .logo {
 	float: left;
-	width: 35%;
+	width: 33%;
 	vertical-align: top;
 }
 
 #navright {
 	float: right;
-	width: 60%;
+	width: 64%;
 	vertical-align: top;
 	text-align: right;
 	font-family: 'Open Sans', sans-serif;
-	font-size: .875em;
+	font-size: .844em;
 }
 
 
@@ -481,7 +481,7 @@ _______________________________________*/
 	}
 
 	#hamitems a {
-		padding: 0 3%;
+		padding: 0 6% 0 0;
 		color: #86bdc2;
 		font-weight: bolder;
 		flex-grow: 1;
