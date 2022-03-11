@@ -113,7 +113,6 @@ p {
 }
 
 
-
 /*======= Hdr/Menu Styling =======*/
 
 .logo {
@@ -131,6 +130,7 @@ p {
 	font-size: .875em;
 }
 
+
 /*======= Universal  Styling =======*/
 
 .navanim {
@@ -147,12 +147,39 @@ p {
 }
 
 
-/*======= Home Styling =======*/
+/*======= Footer Styling =======*/
 
-.mbhome {
-	display: block;
-	position: fixed;
+footer {
+	background-color: #000000;
+	max-height: 11em;
+	margin: 1em 0 0;
+	padding: 1.25em 10%;
 }
+
+.ftrwrap {
+	min-height: 10vh;
+}
+
+.ftrnav ul li a {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	line-height: 250%;
+	font-size: x-small;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+footer p {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	font-size: xx-small;
+	font-weight: lighter;
+	padding: 1.15em 0 0;
+	align-self: flex-end;
+}
+
+
+/*======= Home Styling =======*/
 
 .streamlink {
 	flex: 1;
@@ -162,7 +189,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	min-height: 56vh;
+	height: 40vh;
 	background: #000000 url("/images/hero.jpg") no-repeat center;
 	background-size: contain;
 	padding: 3.5em 0;
@@ -182,12 +209,13 @@ p {
 	padding: .43em 0;
 }
 
-.mbhome aside {
+.mbsmpic {
 	display: block;
 }
 
 .mbsmpic h1 {
 	padding: 1.325em 0;
+	font-size: larger;
 }
 
 .mbsmpic {
@@ -195,22 +223,27 @@ p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 85%;
+	max-width: 65%;
 }
 
+.mbsmpic figcaption {
+	font-size: small;
+	padding: .2em 0 1em;
+}
 
-
-/*======= Footer Styling =======*/
-
-
-
-
-
+.mbhome article p {
+	font-size: medium;
+	padding: .5em 10% .5em;
+}
 
 
 /*=================================
 About
 ==================================*/
+
+.about  {
+	padding: 40px;
+}
 
 .image-list-small img,
 .about-details {
@@ -360,7 +393,7 @@ Media Querries
 @media only screen and (min-width: 576px) {
 
 	.homestream {
-		height: 93vh;
+		height: 57vh;
 		background-size: contain;
 		padding: 5em 0;
 	}
@@ -435,7 +468,7 @@ Media Querries
 	}
 
 	.homestream {
-		height: 100vh;
+		height: 60vh;
 		padding: 6em 0;
 	}
 	
@@ -445,6 +478,25 @@ Media Querries
 		padding: .4em 1%;
 	}
 
+	footer {
+		display: flex;
+		flex-flow: column wrap;
+		background-color: #000000;
+		max-height: 11em;
+		margin: 1em 0 0;
+		padding: 1.8em 5%;
+	}
+	
+	.ftrwrap {
+		display: flex;
+		min-height: 10vh;
+	}
+	
+	.ftrnav {
+		flex: 1;
+		flex: 0 0 20em;
+	}
+	
 
 	
 /*----Subpage 1 Code for 768MQ----*/
@@ -537,9 +589,10 @@ Media Querries
 @media only screen and (min-width: 992px) {
 
 	.maira article {
-		max-width: 60%;
+		max-width: 85%;
 		padding-right: 80px;
 	}
+
 	.homestream {
 		background-size: cover;
 		padding: 3em 0;
