@@ -222,6 +222,10 @@ footer {
 About
 ==================================*/
 
+.about  {
+	padding: 40px;
+}
+
 .image-list-small img,
 .about-details {
 	padding: 30px;
