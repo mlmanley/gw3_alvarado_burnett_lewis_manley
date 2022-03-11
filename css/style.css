@@ -473,6 +473,7 @@ Media Querries
 
 	.seasons {
 		margin: 42px 0;
+		max-width: 100%;
 	}
 
 	.maira article {
@@ -487,6 +488,40 @@ Media Querries
 	.maira img {
 		max-width: 370px;
 	}
+
+	.maira aside img {
+		animation-name: slide-left;
+		animation-duration: 3s;
+	}
+
+	
+
+	@keyframes slide-left {
+		from {
+			transform:translateX(-20px);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
+
+
+
+	.seasons article {
+		animation-name: slide-right;
+		animation-duration: 3s;
+	}
+
+
+	@keyframes slide-left {
+		from {
+			transform:translateX(-30px);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
+
 
 }
 
