@@ -113,7 +113,6 @@ p {
 }
 
 
-
 /*======= Hdr/Menu Styling =======*/
 
 .logo {
@@ -131,6 +130,7 @@ p {
 	font-size: .875em;
 }
 
+
 /*======= Universal  Styling =======*/
 
 .navanim {
@@ -144,6 +144,42 @@ p {
     to {
       transform: translateX(0%);
     }
+}
+
+
+/*======= Footer Styling =======*/
+
+footer {
+	width: 100%;
+	background-color: #000000;
+	height: 11em;
+	margin: 1em 0 0;
+	padding: 1.5em 2% 1em;
+}
+
+.ftrnav {
+	float: left;
+	width: 20%;
+	text-align: left;
+}
+
+.ftrnav a {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	font-size: medium;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+footer p {
+	float: right;
+	width: 60%;
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	font-size: small;
+	font-weight: lighter;
+	vertical-align: bottom;
+	padding: .2em 0;
 }
 
 
@@ -203,19 +239,6 @@ figure img[alt="Season 4 Pic"] {
 	font-size: medium;
 	padding: .5em 10% .5em;
 }
-
-
-
-/*======= Footer Styling =======*/
-
-footer {
-	background-color: #000000;
-	height: 10em;
-	margin: 1em 0 0;
-}
-
-
-
 
 
 /*=================================
