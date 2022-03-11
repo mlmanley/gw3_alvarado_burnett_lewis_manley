@@ -150,36 +150,32 @@ p {
 /*======= Footer Styling =======*/
 
 footer {
-	width: 100%;
 	background-color: #000000;
-	height: 11em;
+	max-height: 11em;
 	margin: 1em 0 0;
-	padding: 1.5em 2% 1em;
+	padding: 1.25em 10%;
 }
 
-.ftrnav {
-	float: left;
-	width: 20%;
-	text-align: left;
+.ftrwrap {
+	min-height: 10vh;
 }
 
-.ftrnav a {
+.ftrnav ul li a {
     font-family: 'Ubuntu', sans-serif;
 	color: #ffffff;
-	font-size: medium;
+	line-height: 250%;
+	font-size: x-small;
 	font-weight: lighter;
 	text-decoration: none;
 }
 
 footer p {
-	float: right;
-	width: 60%;
     font-family: 'Ubuntu', sans-serif;
 	color: #ffffff;
-	font-size: small;
+	font-size: xx-small;
 	font-weight: lighter;
-	vertical-align: bottom;
-	padding: .2em 0;
+	padding: 1.15em 0 0;
+	align-self: flex-end;
 }
 
 
@@ -482,6 +478,25 @@ Media Querries
 		padding: .4em 1%;
 	}
 
+	footer {
+		display: flex;
+		flex-flow: column wrap;
+		background-color: #000000;
+		max-height: 11em;
+		margin: 1em 0 0;
+		padding: 1.8em 5%;
+	}
+	
+	.ftrwrap {
+		display: flex;
+		min-height: 10vh;
+	}
+	
+	.ftrnav {
+		flex: 1;
+		flex: 0 0 20em;
+	}
+	
 
 	
 /*----Subpage 1 Code for 768MQ----*/
