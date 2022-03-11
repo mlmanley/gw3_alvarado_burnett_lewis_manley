@@ -152,7 +152,7 @@ p {
 footer {
 	background-color: #000000;
 	max-height: 11em;
-	margin: 1em 0 0;
+	margin: 1.75em 0 0;
 	padding: 1.5em 10%;
 }
 
@@ -215,7 +215,7 @@ footer p {
 
 .mbsmpic h1 {
 	padding: 1.325em 0;
-	font-size: larger;
+	font-size: 2em;
 }
 
 .mbsmpic {
@@ -224,16 +224,18 @@ footer p {
 
 figure img[alt="Season 4 Pic"] {
 	max-width: 65%;
+	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
 }
 
 .mbsmpic figcaption {
-	font-size: small;
-	padding: .2em 0 1em;
+	font-size: .625em;
+	padding: 1.25em 0 1em;
+	opacity: 70%;
 }
 
 .mbhome article p {
 	font-size: medium;
-	padding: .5em 10% .5em;
+	padding: .5em 8% .5em;
 }
 
 
@@ -321,6 +323,15 @@ Media Querries
 
 
 /*=========== Small Screens ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 2em;
+}
+.urclass p {
+	font-size: medium;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 320px) {
 
@@ -369,11 +380,7 @@ Media Querries
 	}
 
 
-
 /*----Subpage 1 Code for 320MQ----*/
-
-
-
 
 
 
@@ -384,11 +391,19 @@ Media Querries
 
 
 
-
 }
 
 
 /*=========== Small Devices ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 2.5em;
+}
+.urclass p {
+	font-size: large;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 576px) {
 
@@ -403,6 +418,18 @@ Media Querries
 		font-size: .75em;
 		letter-spacing: .07em;
 		padding: .4em 2%;
+	}
+
+	.mbhome h1 {
+		font-size: 2.5em;
+	}
+
+	.mbhome article p {
+		font-size: large;
+	}
+
+	.mbsmpic figcaption {
+		font-size: .875em;
 	}
 
 	.ftrnav ul li a {
@@ -435,8 +462,16 @@ Media Querries
 }
 
 
-
 /*=========== Medium Devices ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 3em;
+}
+.urclass p {
+	font-size: larger;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 768px) {
 
@@ -488,6 +523,18 @@ Media Querries
 		width: 18%;
 		font-size: .875em;
 		padding: .4em 1%;
+	}
+
+	.mbhome h1 {
+		font-size: 3em;
+	}
+
+	.mbhome article p {
+		font-size: larger;
+	}
+
+	.mbsmpic figcaption {
+		font-size: 1em;
 	}
 
 	footer {
@@ -597,19 +644,19 @@ Media Querries
 
 
 
-	
-
-
-
 
 /*=========== Large Devices ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 3.5em;
+}
+.urclass p {
+	font-size: 1.25em;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 992px) {
-
-	.maira article {
-		max-width: 85%;
-		padding-right: 80px;
-	}
 
 	.homestream {
 		background-size: cover;
@@ -621,6 +668,14 @@ Media Querries
 		width: 20%;
 		font-size: 1.25em;
 		letter-spacing: .1em;
+	}
+
+	.mbhome h1 {
+		font-size: 3.5em;
+	}
+
+	.mbhome article p {
+		font-size: 1.25em;
 	}
 
 	footer {
@@ -651,6 +706,11 @@ Media Querries
 
 /*----Subpage 2 Code for 992MQ----*/
 
+	.maira article {
+		max-width: 85%;
+		padding-right: 80px;
+	}
+
 
 
 
@@ -661,6 +721,15 @@ Media Querries
 
 
 /*========== Extra Lg Devices ==========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 4em;
+}
+.urclass p {
+	font-size: 1.5em;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 1200px) {
 
@@ -672,6 +741,18 @@ Media Querries
 	.streamlink button {
 		width: 19%;
 		font-size: 1.375em;
+	}
+
+	.mbhome h1 {
+		font-size: 4em;
+	}
+
+	.mbhome article p {
+		font-size: 1.5em;
+	}
+
+	.mbsmpic figcaption {
+		font-size: 1.125em;
 	}
 
 	footer {
