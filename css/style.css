@@ -153,7 +153,7 @@ footer {
 	background-color: #000000;
 	max-height: 11em;
 	margin: 1em 0 0;
-	padding: 1.25em 10%;
+	padding: 1.5em 10%;
 }
 
 .ftrwrap {
@@ -163,7 +163,7 @@ footer {
 .ftrnav ul li a {
     font-family: 'Ubuntu', sans-serif;
 	color: #ffffff;
-	line-height: 250%;
+	line-height: 275%;
 	font-size: x-small;
 	font-weight: lighter;
 	text-decoration: none;
@@ -174,8 +174,8 @@ footer p {
 	color: #ffffff;
 	font-size: xx-small;
 	font-weight: lighter;
-	padding: 1.15em 0 0;
-	align-self: flex-end;
+	padding: .35em 0 0;
+	text-align: right;
 }
 
 
@@ -405,6 +405,18 @@ Media Querries
 		padding: .4em 2%;
 	}
 
+	.ftrnav ul li a {
+		line-height: 220%;
+		font-size: small;
+	}
+	
+	footer p {
+		font-family: 'Ubuntu', sans-serif;
+		font-size: x-small;
+		padding: .01em 0 0;
+	}
+
+
 /*----Subpage 1 Code for 576MQ----*/
 
 
@@ -481,22 +493,28 @@ Media Querries
 	footer {
 		display: flex;
 		flex-flow: column wrap;
-		background-color: #000000;
-		max-height: 11em;
-		margin: 1em 0 0;
-		padding: 1.8em 5%;
+		padding: 1.5em 5% 1.5em 8%;
 	}
 	
 	.ftrwrap {
 		display: flex;
-		min-height: 10vh;
+	}
+
+	.ftrnav ul li a {
+		line-height: 215%;
 	}
 	
 	.ftrnav {
 		flex: 1;
-		flex: 0 0 20em;
+		flex: 0 0 23em;
+		font-size: small;
 	}
 	
+	footer p {
+		font-size: small;
+		padding: 0;
+		align-self: flex-end;
+	}
 
 	
 /*----Subpage 1 Code for 768MQ----*/
@@ -570,9 +588,22 @@ Media Querries
 		letter-spacing: .1em;
 	}
 
+	footer {
+		padding: 1.5em 8%;
+		max-height: 10em;
+	}
 
+	.ftrwrap {
+		min-height: 8vh;
+	}
 
-
+	.ftrnav ul li a {
+		line-height: 210%;
+	}
+	
+	.ftrnav {
+		flex: 0 0 28em;
+	}
 
 
 /*----Subpage 1 Code for 992MQ----*/
@@ -608,7 +639,27 @@ Media Querries
 		font-size: 1.375em;
 	}
 
+	footer {
+		max-height: 10.5em;
+		padding: 1.7em 8%;
+	}
 
+	.ftrwrap {
+		min-height: 10vh;
+	}
+
+	.ftrnav ul li a {
+		font-size: medium;
+		line-height: 170%;
+	}
+	
+	.ftrnav {
+		flex: 0 0 32em;
+	}
+
+	footer p {
+		font-size: medium;
+	}
 
 
 
