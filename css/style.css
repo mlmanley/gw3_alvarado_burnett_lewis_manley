@@ -246,49 +246,21 @@ figure img[alt="Season 4 Pic"] {
 	padding: .5em 8% .5em;
 }
 
-#mbexpand {
-	overflow: hidden;
-	height: 1em;
-	width: 100%;
+.mbmore {
+	line-height: 170%;
+	padding: 0 8%;
 }
 
-#mbmore:checked + div {
-	height: auto;
-	background-color: #ffffff;
-}
-
-#mbmore input[type="checkbox"] {
-	opacity: 0;
-	font-size: xx-small;
-	font-weight: lighter;
-}
-
-.mbfakebtn p:first-child {
-	border-bottom: .7em solid #ffffff;
-}
-
-.mbfakebtn label::before {
-	content: "Read More";
-	height: .5em;
-	width: 12%;
-	padding: .2em 8%;
-	text-align: center;
+.mbmore > a {
+	display: block;
+	padding: .3em 5%;
+	margin: 0 30%;
+	text-align:center;
+	text-decoration: none;
+	color:#000000;
 	border-radius: .5em;
+	background-color:#d8a6a7;
 	border: .1em solid #000000;
-	background: #d8a6a7;
-	margin-left: 30%;
-}
-
-.mbfakebtn label::after {
-	content: "----";
-	color: #ffffff;
-	text-align: center;
-	height: 6em;
-	width: 12%;
-}
-
-#mbmore input[type="checkbox"]:focus + label::before {
-	outline: #000000;
 }
 
 
