@@ -249,6 +249,34 @@ figure img[alt="Season 4 Pic"] {
 	background-color: #ffffff;
 }
 
+.mbmore input[type="checkbox"] {
+	opacity: 0;
+}
+
+.mbfakebtn label::before {
+	content: "Read More";
+	height: .5em;
+	width: 12%;
+	padding: .7em 7%;
+	text-align: center;
+	border-radius: .5em;
+	border: .1em solid #000000;
+	background: #d8a6a7;
+	
+}
+
+.mbfakebtn label::after {
+	content: "----";
+	color: #ffffff;
+	text-align: center;
+	height: 6em;
+	width: 12%;
+}
+
+#mbmore input[type="checkbox"]:focus + label::before {
+	outline: #000000;
+}
+
 
 /*=================================
 About
@@ -622,7 +650,6 @@ _______________________________________*/
 		animation-duration: 3s;
 	}
 
-	
 
 	@keyframes slide-left {
 		from {
@@ -649,7 +676,6 @@ _______________________________________*/
 			transform: translateX(0);
 		}
 	}
-
 
 }
 
