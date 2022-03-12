@@ -301,8 +301,29 @@ About
 
 }
 
+.slick-prev.slick-arrow {
+    left: 20px;
+}
+
+.slick-next.slick-arrow {
+    right: 20px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+	background-color: #c1dadc;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+	max-width: 200px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 2px 5px;
+}
+
 /*=================================
-Previously On  Styling
+Previously On Styling
 ==================================*/
 
 
@@ -329,6 +350,12 @@ Previously On  Styling
 .maira img {
 	max-width: 100%;
 	margin: 10px 0 15px 0;
+	transition: 0.3s;
+}
+
+.maira img:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .button-recap {
@@ -344,8 +371,6 @@ Previously On  Styling
 .button-recap a {
 	text-decoration: none;
 }
-
-
 
 /*=================================
 Media Querries
@@ -669,9 +694,7 @@ _______________________________________*/
 		max-width: 370px;
 	}
 
-
-
-
+	
 /*=========== Large Devices ===========*/
 
 
@@ -808,7 +831,7 @@ _______________________________________*/
 	footer p {
 		font-size: medium;
 	}
-
+}
 
 /*----Subpage 1 Code for 1200MQ----*/
 
@@ -820,9 +843,3 @@ _______________________________________*/
 
 /*----Subpage 2 Code for 1200MQ----*/
 
-
-
-
-
-
-}
