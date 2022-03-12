@@ -84,7 +84,6 @@ h2 {
 	/* font-size: 3.68em; */
 	/* Maira's suggestion for font size below */
 	font-size: 2.2em;
-	font-weight: medium;
 	color: #000000;
 }
 
@@ -217,6 +216,10 @@ footer p {
 	padding: .43em 0;
 }
 
+.streamlink button:hover, button:active {
+	background-color: #48a0a7;
+}
+
 .mbsmpic {
 	display: block;
 }
@@ -231,7 +234,7 @@ footer p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 65%;
+	max-width: 55%;
 	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
 }
 
@@ -242,25 +245,29 @@ figure img[alt="Season 4 Pic"] {
 }
 
 .mbhome article p {
-	font-size: medium;
+	font-size: large;
 	padding: .5em 8% .5em;
 }
 
 .mbmore {
 	line-height: 170%;
-	padding: 0 8%;
+	padding: 0 9%;
 }
 
 .mbmore > a {
 	display: block;
-	padding: .3em 5%;
-	margin: 0 30%;
-	text-align:center;
+	padding: .1em 3%;
+	margin: 0 28%;
+	text-align: center;
 	text-decoration: none;
 	color:#000000;
 	border-radius: .5em;
 	background-color:#d8a6a7;
 	border: .1em solid #000000;
+}
+
+.mbmore a:hover, a:active {
+	background-color: #9d0004;
 }
 
 
@@ -379,8 +386,13 @@ _______________________________________*/
 	}
 
 	#hamitems a:hover {
-		opacity: 80%;
 		font-weight: bolder;
+		background-color: rgba(193, 218, 220, 75%);
+	}
+
+	#hamitems a:active {
+		font-weight: bolder;
+		background-color: rgba(255, 255, 255, 75%);
 	}
 
 	#navright label {
@@ -444,21 +456,19 @@ _______________________________________*/
 	}
 
 	.mbhome h1 {
-		font-size: 2.5em;
+		font-size: 2.8em;
 	}
 
 	.mbhome article p {
 		font-size: large;
 	}
 
-	.mbsmpic figcaption {
-		font-size: .875em;
+	figure img[alt="Season 4 Pic"] {
+		max-width: 48%;
 	}
 
-	.mbfakebtn label::before {
-		padding: .3em 6%;
-		border: .15em solid #000000;
-		margin-left: 40%;
+	.mbsmpic figcaption {
+		font-size: .875em;
 	}
 
 	.ftrnav ul li a {
@@ -516,6 +526,16 @@ _______________________________________*/
 		flex-grow: 1;
 		flex-basis: 0;
 		justify-content: flex-end;
+	}
+
+	#hamitems a:hover {
+		font-weight: bolder;
+		background-color: #000000;
+	}
+
+	#hamitems a:active {
+		font-weight: bolder;
+		background-color: rgba(193, 218, 220, 75%);
 	}
 
 	#navright label, #hamburger {
