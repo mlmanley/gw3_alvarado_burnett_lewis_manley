@@ -307,11 +307,12 @@ About
     top: 0;
 	background-color: #c1dadc;
     border: 2px solid #000000;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
 	max-width: 200px;
 	margin-top: 20px;
 	margin-bottom: 15px;
+	padding: 2px 5px;
 }
 
 /*=================================
@@ -342,6 +343,12 @@ Previously On Styling
 .maira img {
 	max-width: 100%;
 	margin: 10px 0 15px 0;
+	transition: 0.3s;
+}
+
+.maira img:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .button-recap {
@@ -357,8 +364,6 @@ Previously On Styling
 .button-recap a {
 	text-decoration: none;
 }
-
-
 
 /*=================================
 Media Querries
