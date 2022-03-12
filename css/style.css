@@ -73,14 +73,18 @@ header {
 
 h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 4em;
+	/* font-size: 4em; */
+	/* Maira's suggestion for font size below */
+	font-size: 2.8em;
 	font-weight: bold;
 	color: #9d0004;
 }
 
 h2 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 3.68em;
+	/* font-size: 3.68em; */
+	/* Maira's suggestion for font size below */
+	font-size: 2.2em;
 	font-weight: medium;
 	color: #000000;
 }
@@ -126,7 +130,7 @@ p {
 	width: 64%;
 	vertical-align: top;
 	text-align: right;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: .844em;
 }
 
@@ -262,7 +266,6 @@ figure img[alt="Season 4 Pic"] {
 	border-radius: .5em;
 	border: .1em solid #000000;
 	background: #d8a6a7;
-	
 }
 
 .mbfakebtn label::after {
@@ -319,7 +322,7 @@ Previously On  Styling
 
 
 .maira {
-	max-width: 1000px;
+	max-width: 1200px;
 	padding: 40px;
 	margin: 0 auto;
 }
@@ -350,6 +353,11 @@ Previously On  Styling
     text-align: center;
 	max-width: 200px;
 	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.button-recap a {
+	text-decoration: none;
 }
 
 
@@ -411,7 +419,7 @@ _______________________________________*/
 	}
 	
 	#navright input:checked ~ #hamitems {
-		display: block;
+		/* display: block; */
 	}
 	
 	#hamburger {
@@ -619,12 +627,25 @@ _______________________________________*/
 		padding: 0 40px;
 	}
 	
+	.maira h1 {
+		font-size: 3em;
+	}
+
+	.maira h2 {
+		font-size: 2.5em;
+	}
+
+	.maira p {
+		font-size: larger;
+	}
+
 	.season-one,
 	.season-two,
 	.season-three {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: center;
+		justify-content: flex-end;
+;
 	}
 
 	.seasons {
@@ -638,13 +659,15 @@ _______________________________________*/
 	}
 
 	.maira aside {
-		padding-left: 10px;
+		padding-left: 20px;
 	}
 
 	.maira img {
+		width: 100%;
 		max-width: 370px;
 	}
 
+<<<<<<< HEAD
 	.maira aside img {
 		animation-name: slide-left;
 		animation-duration: 3s;
@@ -677,9 +700,9 @@ _______________________________________*/
 		}
 	}
 
+=======
+>>>>>>> 51c6cc2c5b14fe53111d2772f1549be7f067998b
 }
-
-
 
 
 /*=========== Large Devices ===========*/
@@ -744,17 +767,21 @@ _______________________________________*/
 /*----Subpage 2 Code for 992MQ----*/
 
 	.maira article {
-		max-width: 85%;
 		padding-right: 80px;
 	}
 
+	.maira h1 {
+		font-size: 3.5em;
+	}
+	
+	.maira h2 {
+		font-size: 2.75em;
+	}
 
-
-
-
-
+	.maira p {
+		font-size: 1.25em;
+	}
 }
-
 
 
 /*========== Extra Lg Devices ==========*/
