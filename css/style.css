@@ -113,23 +113,23 @@ p {
 }
 
 
-
 /*======= Hdr/Menu Styling =======*/
 
 .logo {
 	float: left;
-	width: 35%;
+	width: 33%;
 	vertical-align: top;
 }
 
 #navright {
 	float: right;
-	width: 60%;
+	width: 64%;
 	vertical-align: top;
 	text-align: right;
 	font-family: 'Open Sans', sans-serif;
-	font-size: .875em;
+	font-size: .844em;
 }
+
 
 /*======= Universal  Styling =======*/
 
@@ -147,12 +147,39 @@ p {
 }
 
 
-/*======= Home Styling =======*/
+/*======= Footer Styling =======*/
 
-.mbhome {
-	display: block;
-	position: fixed;
+footer {
+	background-color: #000000;
+	max-height: 11em;
+	margin: 1.75em 0 0;
+	padding: 1.5em 10%;
 }
+
+.ftrwrap {
+	min-height: 10vh;
+}
+
+.ftrnav ul li a {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	line-height: 275%;
+	font-size: x-small;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+footer p {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	font-size: xx-small;
+	font-weight: lighter;
+	padding: .35em 0 0;
+	text-align: right;
+}
+
+
+/*======= Home Styling =======*/
 
 .streamlink {
 	flex: 1;
@@ -162,7 +189,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	min-height: 56vh;
+	height: 40vh;
 	background: #000000 url("/images/hero.jpg") no-repeat center;
 	background-size: contain;
 	padding: 3.5em 0;
@@ -182,12 +209,13 @@ p {
 	padding: .43em 0;
 }
 
-.mbhome aside {
+.mbsmpic {
 	display: block;
 }
 
 .mbsmpic h1 {
 	padding: 1.325em 0;
+	font-size: 2em;
 }
 
 .mbsmpic {
@@ -195,17 +223,31 @@ p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 85%;
+	max-width: 65%;
+	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
 }
 
+.mbsmpic figcaption {
+	font-size: .625em;
+	padding: 1.25em 0 1em;
+	opacity: 70%;
+}
 
+.mbhome article p {
+	font-size: medium;
+	padding: .5em 8% .5em;
+}
 
-/*======= Footer Styling =======*/
-
-
-
-
-
+#mbexpand {
+	overflow: hidden;
+	height: 1em;
+	width: 100%;
+}
+  
+#mbmore:checked + div {
+	height: auto;
+	background-color: #ffffff;
+}
 
 
 /*=================================
@@ -292,6 +334,15 @@ Media Querries
 
 
 /*=========== Small Screens ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 2em;
+}
+.urclass p {
+	font-size: medium;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 320px) {
 
@@ -340,11 +391,7 @@ Media Querries
 	}
 
 
-
 /*----Subpage 1 Code for 320MQ----*/
-
-
-
 
 
 
@@ -355,16 +402,24 @@ Media Querries
 
 
 
-
 }
 
 
 /*=========== Small Devices ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 2.5em;
+}
+.urclass p {
+	font-size: large;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 576px) {
 
 	.homestream {
-		height: 93vh;
+		height: 57vh;
 		background-size: contain;
 		padding: 5em 0;
 	}
@@ -375,6 +430,30 @@ Media Querries
 		letter-spacing: .07em;
 		padding: .4em 2%;
 	}
+
+	.mbhome h1 {
+		font-size: 2.5em;
+	}
+
+	.mbhome article p {
+		font-size: large;
+	}
+
+	.mbsmpic figcaption {
+		font-size: .875em;
+	}
+
+	.ftrnav ul li a {
+		line-height: 220%;
+		font-size: small;
+	}
+	
+	footer p {
+		font-family: 'Ubuntu', sans-serif;
+		font-size: x-small;
+		padding: .01em 0 0;
+	}
+
 
 /*----Subpage 1 Code for 576MQ----*/
 
@@ -394,8 +473,16 @@ Media Querries
 }
 
 
-
 /*=========== Medium Devices ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 3em;
+}
+.urclass p {
+	font-size: larger;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 768px) {
 
@@ -405,7 +492,7 @@ Media Querries
 	}
 
 	#hamitems a {
-		padding: 0 3%;
+		padding: 0 6% 0 0;
 		color: #86bdc2;
 		font-weight: bolder;
 		flex-grow: 1;
@@ -439,7 +526,7 @@ Media Querries
 	}
 
 	.homestream {
-		height: 100vh;
+		height: 60vh;
 		padding: 6em 0;
 	}
 	
@@ -449,6 +536,43 @@ Media Querries
 		padding: .4em 1%;
 	}
 
+	.mbhome h1 {
+		font-size: 3em;
+	}
+
+	.mbhome article p {
+		font-size: larger;
+	}
+
+	.mbsmpic figcaption {
+		font-size: 1em;
+	}
+
+	footer {
+		display: flex;
+		flex-flow: column wrap;
+		padding: 1.5em 5% 1.5em 8%;
+	}
+	
+	.ftrwrap {
+		display: flex;
+	}
+
+	.ftrnav ul li a {
+		line-height: 215%;
+	}
+	
+	.ftrnav {
+		flex: 1;
+		flex: 0 0 23em;
+		font-size: small;
+	}
+	
+	footer p {
+		font-size: small;
+		padding: 0;
+		align-self: flex-end;
+	}
 
 	
 /*----Subpage 1 Code for 768MQ----*/
@@ -477,6 +601,7 @@ Media Querries
 
 	.seasons {
 		margin: 42px 0;
+		max-width: 100%;
 	}
 
 	.maira article {
@@ -492,23 +617,58 @@ Media Querries
 		max-width: 370px;
 	}
 
-}
-
-
+	.maira aside img {
+		animation-name: slide-left;
+		animation-duration: 3s;
+	}
 
 	
+
+	@keyframes slide-left {
+		from {
+			transform:translateX(-20px);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
+
+
+
+	.seasons article {
+		animation-name: slide-right;
+		animation-duration: 3s;
+	}
+
+
+	@keyframes slide-left {
+		from {
+			transform:translateX(-30px);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
+
+
+}
 
 
 
 
 /*=========== Large Devices ===========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 3.5em;
+}
+.urclass p {
+	font-size: 1.25em;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 992px) {
 
-	.maira article {
-		max-width: 60%;
-		padding-right: 80px;
-	}
 	.homestream {
 		background-size: cover;
 		padding: 3em 0;
@@ -521,9 +681,30 @@ Media Querries
 		letter-spacing: .1em;
 	}
 
+	.mbhome h1 {
+		font-size: 3.5em;
+	}
 
+	.mbhome article p {
+		font-size: 1.25em;
+	}
 
+	footer {
+		padding: 1.5em 8%;
+		max-height: 10em;
+	}
 
+	.ftrwrap {
+		min-height: 8vh;
+	}
+
+	.ftrnav ul li a {
+		line-height: 210%;
+	}
+	
+	.ftrnav {
+		flex: 0 0 28em;
+	}
 
 
 /*----Subpage 1 Code for 992MQ----*/
@@ -536,6 +717,11 @@ Media Querries
 
 /*----Subpage 2 Code for 992MQ----*/
 
+	.maira article {
+		max-width: 85%;
+		padding-right: 80px;
+	}
+
 
 
 
@@ -546,6 +732,15 @@ Media Querries
 
 
 /*========== Extra Lg Devices ==========*/
+/* w/font guidelines:
+
+.urclass h1 {
+	font-size: 4em;
+}
+.urclass p {
+	font-size: 1.5em;
+}
+_______________________________________*/
 
 @media only screen and (min-width: 1200px) {
 
@@ -559,7 +754,39 @@ Media Querries
 		font-size: 1.375em;
 	}
 
+	.mbhome h1 {
+		font-size: 4em;
+	}
 
+	.mbhome article p {
+		font-size: 1.5em;
+	}
+
+	.mbsmpic figcaption {
+		font-size: 1.125em;
+	}
+
+	footer {
+		max-height: 10.5em;
+		padding: 1.7em 8%;
+	}
+
+	.ftrwrap {
+		min-height: 10vh;
+	}
+
+	.ftrnav ul li a {
+		font-size: medium;
+		line-height: 170%;
+	}
+	
+	.ftrnav {
+		flex: 0 0 32em;
+	}
+
+	footer p {
+		font-size: medium;
+	}
 
 
 
