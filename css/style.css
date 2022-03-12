@@ -591,6 +591,14 @@ _______________________________________*/
 		padding: 0 40px;
 	}
 	
+	.maira h1 {
+	font-size: 3em;
+	}
+
+	.maira p {
+	font-size: larger;
+	}
+
 	.season-one,
 	.season-two,
 	.season-three {
@@ -614,46 +622,11 @@ _______________________________________*/
 	}
 
 	.maira img {
+		width: 100%;
 		max-width: 370px;
 	}
 
-	.maira aside img {
-		animation-name: slide-left;
-		animation-duration: 3s;
-	}
-
-	
-
-	@keyframes slide-left {
-		from {
-			transform:translateX(-20px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-
-
-
-	.seasons article {
-		animation-name: slide-right;
-		animation-duration: 3s;
-	}
-
-
-	@keyframes slide-left {
-		from {
-			transform:translateX(-30px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-
-
 }
-
-
 
 
 /*=========== Large Devices ===========*/
@@ -718,11 +691,15 @@ _______________________________________*/
 /*----Subpage 2 Code for 992MQ----*/
 
 	.maira article {
-		max-width: 85%;
 		padding-right: 80px;
 	}
 
-
+	.urclass h1 {
+		font-size: 3.5em;
+	}
+	.urclass p {
+		font-size: 1.25em;
+	}
 
 
 
