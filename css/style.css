@@ -185,6 +185,11 @@ footer p {
 
 /*======= Home Styling =======*/
 
+.mbhome {
+	display: block;
+	position: fixed;
+}
+
 .streamlink {
 	flex: 1;
 }
@@ -426,7 +431,7 @@ _______________________________________*/
 	}
 	
 	#navright input:checked ~ #hamitems {
-		/* display: block; */
+		display: block;
 	}
 	
 	#hamburger {
