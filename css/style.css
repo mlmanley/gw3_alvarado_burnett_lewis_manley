@@ -322,8 +322,28 @@ About
 
 }
 
+.slick-prev.slick-arrow {
+    left: 20px;
+}
+
+.slick-next.slick-arrow {
+    right: 20px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+	background-color: #c1dadc;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+	max-width: 200px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
 /*=================================
-Previously On  Styling
+Previously On Styling
 ==================================*/
 
 
@@ -677,9 +697,7 @@ _______________________________________*/
 		max-width: 370px;
 	}
 
-
-
-
+	
 /*=========== Large Devices ===========*/
 
 
