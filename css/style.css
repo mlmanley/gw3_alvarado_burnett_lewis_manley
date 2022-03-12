@@ -253,19 +253,26 @@ figure img[alt="Season 4 Pic"] {
 	background-color: #ffffff;
 }
 
-.mbmore input[type="checkbox"] {
+#mbmore input[type="checkbox"] {
 	opacity: 0;
+	font-size: xx-small;
+	font-weight: lighter;
+}
+
+.mbfakebtn p:first-child {
+	border-bottom: .7em solid #ffffff;
 }
 
 .mbfakebtn label::before {
 	content: "Read More";
 	height: .5em;
 	width: 12%;
-	padding: .7em 7%;
+	padding: .2em 8%;
 	text-align: center;
 	border-radius: .5em;
 	border: .1em solid #000000;
 	background: #d8a6a7;
+	margin-left: 30%;
 }
 
 .mbfakebtn label::after {
@@ -477,6 +484,12 @@ _______________________________________*/
 
 	.mbsmpic figcaption {
 		font-size: .875em;
+	}
+
+	.mbfakebtn label::before {
+		padding: .3em 6%;
+		border: .15em solid #000000;
+		margin-left: 40%;
 	}
 
 	.ftrnav ul li a {
