@@ -238,6 +238,17 @@ figure img[alt="Season 4 Pic"] {
 	padding: .5em 8% .5em;
 }
 
+#mbexpand {
+	overflow: hidden;
+	height: 1em;
+	width: 100%;
+}
+  
+#mbmore:checked + div {
+	height: auto;
+	background-color: #ffffff;
+}
+
 
 /*=================================
 About
