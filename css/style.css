@@ -649,42 +649,6 @@ _______________________________________*/
 		max-width: 370px;
 	}
 
-<<<<<<< HEAD
-	.maira aside img {
-		animation-name: slide-left;
-		animation-duration: 3s;
-	}
-
-
-	@keyframes slide-left {
-		from {
-			transform:translateX(-20px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-
-
-
-	.seasons article {
-		animation-name: slide-right;
-		animation-duration: 3s;
-	}
-
-
-	@keyframes slide-left {
-		from {
-			transform:translateX(-30px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-
-=======
->>>>>>> 51c6cc2c5b14fe53111d2772f1549be7f067998b
-}
 
 
 
