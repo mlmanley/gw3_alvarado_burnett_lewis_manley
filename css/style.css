@@ -283,6 +283,7 @@ About
 .about-details {
 	padding: 30px;
 }
+
 .image-list-small img {
 	border-radius: 50%;
 }
@@ -292,13 +293,11 @@ About
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .about-details {
 	width: 350px;
 	text-align: center;
-
 }
 
 .slick-prev.slick-arrow {
@@ -322,10 +321,10 @@ About
 	padding: 2px 5px;
 }
 
+
 /*=================================
 Previously On Styling
 ==================================*/
-
 
 .maira {
 	max-width: 1200px;
@@ -371,6 +370,7 @@ Previously On Styling
 .button-recap a {
 	text-decoration: none;
 }
+
 
 /*=================================
 Media Querries
@@ -445,6 +445,7 @@ _______________________________________*/
 
 
 
+
 /*----Subpage 2 Code for 320MQ----*/
 
 
@@ -515,9 +516,7 @@ _______________________________________*/
 
 
 
-
 /*----Subpage 2 Code for 576MQ----*/
-
 
 
 
@@ -648,8 +647,6 @@ _______________________________________*/
 
 /*----Subpage 2 Code for 768MQ----*/
 
-@media only screen and (min-width: 768px){
-
 	.maira {
 		padding: 0 40px;
 	}
@@ -672,7 +669,7 @@ _______________________________________*/
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: flex-end;
-;
+
 	}
 
 	.seasons {
@@ -694,8 +691,7 @@ _______________________________________*/
 		max-width: 370px;
 	}
 
-	
-/*=========== Large Devices ===========*/
+}
 
 
 /*=========== Large Devices ===========*/
@@ -748,6 +744,7 @@ _______________________________________*/
 		flex: 0 0 28em;
 	}
 
+
 /*----Subpage 1 Code for 992MQ----*/
 
 
@@ -758,22 +755,23 @@ _______________________________________*/
 
 /*----Subpage 2 Code for 992MQ----*/
 
-.maira article {
-	padding-right: 80px;
+	.maira article {
+		padding-right: 80px;
+	}
+
+	.maira h1 {
+		font-size: 3.5em;
+	}
+
+	.maira h2 {
+		font-size: 2.75em;
+	}
+
+	.maira p {
+		font-size: 1.25em;
+	}
 }
 
-.maira h1 {
-	font-size: 3.5em;
-}
-
-.maira h2 {
-	font-size: 2.75em;
-}
-
-.maira p {
-	font-size: 1.25em;
-}
-}
 
 /*========== Extra Lg Devices ==========*/
 /* w/font guidelines:
@@ -831,7 +829,7 @@ _______________________________________*/
 	footer p {
 		font-size: medium;
 	}
-}
+
 
 /*----Subpage 1 Code for 1200MQ----*/
 
@@ -843,3 +841,4 @@ _______________________________________*/
 
 /*----Subpage 2 Code for 1200MQ----*/
 
+}
