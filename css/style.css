@@ -214,7 +214,7 @@ figure img[alt="Season 4 Pic"] {
 
 .mbsmpic figcaption {
 	font-size: .625em;
-	padding: 1.25em 0 1em;
+	padding: 1.25em 0 1.5em;
 	opacity: 70%;
 }
 
@@ -239,7 +239,7 @@ figure img[alt="Season 4 Pic"] {
 .mbmore > a {
 	display: block;
 	padding: .1em 3%;
-	margin: 0 28%;
+	margin: 1.3em 28% 3.75em;
 	text-align: center;
 	text-decoration: none;
 	color:#000000;
@@ -488,6 +488,7 @@ _______________________________________*/
 		height: 57vh;
 		background-size: contain;
 		padding: 5em 0;
+		margin-bottom: .75em;
 	}
 
 	.streamlink button {
@@ -503,18 +504,23 @@ _______________________________________*/
 
 	figure img[alt="Season 4 Pic"] {
 		max-width: 48%;
+		margin: 1.5em 10% 0;
 	}
 
 	.mbsmpic figcaption {
 		font-size: .875em;
 	}
 
+	.mbhome aside figure:before {
+		font-size: 2.8em;
+	}
+
 	#mbhdg {
-		margin: 1em 0 .6em 9%;
+		margin: 1.5em 0 .6em 9%;
 	}
 
 	.mbmore > a {
-		margin: 0 34%;
+		margin: 1.75em 34% 4.4em;
 	}
 
 	.ftrnav ul li a {
@@ -656,9 +662,8 @@ _______________________________________*/
 	}
 
 	.mbmore > a {
-		margin: 0 30%;
+		margin: 1.5em 30% 4em;
 	}
-
 
 	.mbsmpic figcaption {
 		font-size: 1em;
@@ -782,7 +787,7 @@ _______________________________________*/
 	}
 
 	.mbmore > a {
-		margin: 0 33%;
+		margin: 2.5em 33% 5.75em;
 	}
 
 	footer {
@@ -867,7 +872,7 @@ _______________________________________*/
 	}
 
 	.mbmore > a {
-		margin: 0 36%;
+		margin: 2em 36% 5.25em;
 	}
 
 	footer {
