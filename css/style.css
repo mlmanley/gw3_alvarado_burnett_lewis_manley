@@ -149,38 +149,6 @@ p {
 }
 
 
-/*======= Footer Styling =======*/
-
-footer {
-	background-color: #000000;
-	max-height: 11em;
-	margin: 1.75em 0 0;
-	padding: 1.5em 10%;
-}
-
-.ftrwrap {
-	min-height: 10vh;
-}
-
-.ftrnav ul li a {
-    font-family: 'Ubuntu', sans-serif;
-	color: #ffffff;
-	line-height: 275%;
-	font-size: x-small;
-	font-weight: lighter;
-	text-decoration: none;
-}
-
-footer p {
-    font-family: 'Ubuntu', sans-serif;
-	color: #ffffff;
-	font-size: xx-small;
-	font-weight: lighter;
-	padding: .35em 0 0;
-	text-align: right;
-}
-
-
 /*======= Main Styling =======*/
 
 .mbhome {
@@ -220,13 +188,18 @@ footer p {
 	background-color: #48a0a7;
 }
 
-.mbsmpic {
+.mbhome aside {
 	display: block;
+	background-color: #ffffff;
+	border-top:  1.7em solid #ffffff;
 }
 
-.mbsmpic h1 {
-	padding: 1.325em 0;
+.mbhome aside figure:before {
+	content: 'Season 4 Spoilers';
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 2em;
+	font-weight: bolder;
+	color: #9d0004;
 }
 
 .mbsmpic {
@@ -235,6 +208,7 @@ footer p {
 
 figure img[alt="Season 4 Pic"] {
 	max-width: 55%;
+	margin: 1.5em 0 0;
 	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
 }
 
@@ -242,6 +216,14 @@ figure img[alt="Season 4 Pic"] {
 	font-size: .625em;
 	padding: 1.25em 0 1em;
 	opacity: 70%;
+}
+
+.mbhome article {
+	background-color: #ffffff;
+}
+
+.mbhome article h1 {
+	display: none;
 }
 
 .mbhome article p {
@@ -269,6 +251,40 @@ figure img[alt="Season 4 Pic"] {
 .mbmore a:hover, a:active {
 	background-color: #9d0004;
 }
+
+
+/*======= Footer Styling =======*/
+
+footer {
+	display: block;
+	background-color: #000000;
+	max-height: 11em;
+	margin: 1.75em 0 0;
+	padding: 1.5em 10%;
+}
+
+.ftrwrap {
+	min-height: 10vh;
+}
+
+.ftrnav ul li a {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	line-height: 275%;
+	font-size: x-small;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+footer p {
+    font-family: 'Ubuntu', sans-serif;
+	color: #ffffff;
+	font-size: xx-small;
+	font-weight: lighter;
+	padding: .35em 0 0;
+	text-align: right;
+}
+
 
 
 /*=================================
@@ -481,12 +497,8 @@ _______________________________________*/
 		padding: .4em 2%;
 	}
 
-	.mbhome h1 {
-		font-size: 2.8em;
-	}
-
-	.mbhome article p {
-		font-size: large;
+	.mbsmpic figure {
+		text-align: center;
 	}
 
 	figure img[alt="Season 4 Pic"] {
@@ -495,6 +507,14 @@ _______________________________________*/
 
 	.mbsmpic figcaption {
 		font-size: .875em;
+	}
+
+	#mbhdg {
+		margin: 1em 0 .6em 9%;
+	}
+
+	.mbmore > a {
+		margin: 0 34%;
 	}
 
 	.ftrnav ul li a {
@@ -598,13 +618,47 @@ _______________________________________*/
 		padding: .4em 1%;
 	}
 
-	.mbhome h1 {
-		font-size: 3em;
+	.mbhome aside figure:before {
+		display: none;
+	}
+
+	.mbhome aside, article {
+		padding: 3em 0 0
+	}
+
+	.mbhome aside {
+		display: inline;
+		width: 50%;
+		float: left;
+		background-color: #ffffff;
+	}
+
+	.mbhome article {
+		display: inline;
+		width: 45%;
+		float: left;
+		background-color: #ffffff;
+		border-top:  2.25em solid #ffffff;
+	}
+
+	.mbhome article h1 { 
+		display: contents;
+		text-align: left;
+		font-size: 2.3em;
 	}
 
 	.mbhome article p {
 		font-size: larger;
 	}
+
+	.mbmore {
+		padding: 2em 0 0;
+	}
+
+	.mbmore > a {
+		margin: 0 30%;
+	}
+
 
 	.mbsmpic figcaption {
 		font-size: 1em;
@@ -719,12 +773,16 @@ _______________________________________*/
 		letter-spacing: .1em;
 	}
 
-	.mbhome h1 {
-		font-size: 3.5em;
+	.mbhome article h1 {
+		font-size: 3em;
 	}
 
 	.mbhome article p {
 		font-size: 1.25em;
+	}
+
+	.mbmore > a {
+		margin: 0 33%;
 	}
 
 	footer {
@@ -796,16 +854,20 @@ _______________________________________*/
 		font-size: 1.375em;
 	}
 
-	.mbhome h1 {
-		font-size: 4em;
+	.mbsmpic figcaption {
+		font-size: 1.125em;
+	}
+	
+	.mbhome article h1 {
+		font-size: 3.5em;
 	}
 
 	.mbhome article p {
 		font-size: 1.5em;
 	}
 
-	.mbsmpic figcaption {
-		font-size: 1.125em;
+	.mbmore > a {
+		margin: 0 36%;
 	}
 
 	footer {
