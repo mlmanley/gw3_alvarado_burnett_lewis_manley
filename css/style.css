@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -18,10 +18,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	overflow-x: hidden;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -73,15 +72,18 @@ header {
 
 h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 4em;
+	/* font-size: 4em; */
+	/* Maira's suggestion for font size below */
+	font-size: 2.8em;
 	font-weight: bold;
 	color: #9d0004;
 }
 
 h2 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 3.68em;
-	font-weight: medium;
+	/* font-size: 3.68em; */
+	/* Maira's suggestion for font size below */
+	font-size: 2.2em;
 	color: #000000;
 }
 
@@ -126,7 +128,7 @@ p {
 	width: 64%;
 	vertical-align: top;
 	text-align: right;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: .844em;
 }
 
@@ -179,7 +181,12 @@ footer p {
 }
 
 
-/*======= Home Styling =======*/
+/*======= Main Styling =======*/
+
+.mbhome {
+	display: block;
+	position: fixed;
+}
 
 .streamlink {
 	flex: 1;
@@ -209,6 +216,10 @@ footer p {
 	padding: .43em 0;
 }
 
+.streamlink button:hover, button:active {
+	background-color: #48a0a7;
+}
+
 .mbsmpic {
 	display: block;
 }
@@ -223,7 +234,7 @@ footer p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 65%;
+	max-width: 55%;
 	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
 }
 
@@ -234,19 +245,29 @@ figure img[alt="Season 4 Pic"] {
 }
 
 .mbhome article p {
-	font-size: medium;
+	font-size: large;
 	padding: .5em 8% .5em;
 }
 
-#mbexpand {
-	overflow: hidden;
-	height: 1em;
-	width: 100%;
+.mbmore {
+	line-height: 170%;
+	padding: 0 9%;
 }
-  
-#mbmore:checked + div {
-	height: auto;
-	background-color: #ffffff;
+
+.mbmore > a {
+	display: block;
+	padding: .1em 3%;
+	margin: 0 28%;
+	text-align: center;
+	text-decoration: none;
+	color:#000000;
+	border-radius: .5em;
+	background-color:#d8a6a7;
+	border: .1em solid #000000;
+}
+
+.mbmore a:hover, a:active {
+	background-color: #9d0004;
 }
 
 
@@ -262,6 +283,7 @@ About
 .about-details {
 	padding: 30px;
 }
+
 .image-list-small img {
 	border-radius: 50%;
 }
@@ -271,27 +293,41 @@ About
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .about-details {
 	width: 350px;
 	text-align: center;
+}
 
+.slick-prev.slick-arrow {
+    left: 20px;
+}
+
+.slick-next.slick-arrow {
+    right: 20px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+	background-color: #c1dadc;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+	max-width: 200px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 2px 5px;
 }
 
 
-
-
-
-
 /*=================================
-Previously On  Styling
+Previously On Styling
 ==================================*/
 
-
 .maira {
-	max-width: 1000px;
+	max-width: 1200px;
 	padding: 40px;
 	margin: 0 auto;
 }
@@ -313,6 +349,12 @@ Previously On  Styling
 .maira img {
 	max-width: 100%;
 	margin: 10px 0 15px 0;
+	transition: 0.3s;
+}
+
+.maira img:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .button-recap {
@@ -322,10 +364,12 @@ Previously On  Styling
     text-align: center;
 	max-width: 200px;
 	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
-
-
+.button-recap a {
+	text-decoration: none;
+}
 
 
 /*=================================
@@ -354,7 +398,7 @@ _______________________________________*/
 		opacity: 90%;
 		z-index: 2;
 	}
-	
+
 	#hamitems a {
 		box-sizing: border-box;
 		display: block;
@@ -365,33 +409,39 @@ _______________________________________*/
 		text-decoration: none;
 		text-align: right;
 	}
-	
+
 	#hamitems a:hover {
-		opacity: 80%;
 		font-weight: bolder;
+		background-color: rgba(193, 218, 220, 75%);
 	}
-	
+
+	#hamitems a:active {
+		font-weight: bolder;
+		background-color: rgba(255, 255, 255, 75%);
+	}
+
 	#navright label {
 		display: inline-block;
 		color: #212226;
 		font-size: 2.5em;
 		padding: .5em 7% 0;
 	}
-	
+
 	#hamitems {
 		display: none;
 	}
-	
+
 	#navright input:checked ~ #hamitems {
 		display: block;
 	}
-	
+
 	#hamburger {
 		display: none;
 	}
 
 
 /*----Subpage 1 Code for 320MQ----*/
+
 
 
 
@@ -423,7 +473,7 @@ _______________________________________*/
 		background-size: contain;
 		padding: 5em 0;
 	}
-	
+
 	.streamlink button {
 		width: 20%;
 		font-size: .75em;
@@ -432,11 +482,15 @@ _______________________________________*/
 	}
 
 	.mbhome h1 {
-		font-size: 2.5em;
+		font-size: 2.8em;
 	}
 
 	.mbhome article p {
 		font-size: large;
+	}
+
+	figure img[alt="Season 4 Pic"] {
+		max-width: 48%;
 	}
 
 	.mbsmpic figcaption {
@@ -447,7 +501,7 @@ _______________________________________*/
 		line-height: 220%;
 		font-size: small;
 	}
-	
+
 	footer p {
 		font-family: 'Ubuntu', sans-serif;
 		font-size: x-small;
@@ -462,9 +516,7 @@ _______________________________________*/
 
 
 
-
 /*----Subpage 2 Code for 576MQ----*/
-
 
 
 
@@ -500,6 +552,16 @@ _______________________________________*/
 		justify-content: flex-end;
 	}
 
+	#hamitems a:hover {
+		font-weight: bolder;
+		background-color: #000000;
+	}
+
+	#hamitems a:active {
+		font-weight: bolder;
+		background-color: rgba(193, 218, 220, 75%);
+	}
+
 	#navright label, #hamburger {
 		display: none;
 	}
@@ -515,7 +577,7 @@ _______________________________________*/
 	.navanim {
 		animation: grow 1.7s backwards ease;
 	}
-	
+
 	@keyframes grow {
 		from {
 		  transform: translateY(-100%);
@@ -529,7 +591,7 @@ _______________________________________*/
 		height: 60vh;
 		padding: 6em 0;
 	}
-	
+
 	.streamlink button {
 		width: 18%;
 		font-size: .875em;
@@ -553,7 +615,7 @@ _______________________________________*/
 		flex-flow: column wrap;
 		padding: 1.5em 5% 1.5em 8%;
 	}
-	
+
 	.ftrwrap {
 		display: flex;
 	}
@@ -561,20 +623,20 @@ _______________________________________*/
 	.ftrnav ul li a {
 		line-height: 215%;
 	}
-	
+
 	.ftrnav {
 		flex: 1;
 		flex: 0 0 23em;
 		font-size: small;
 	}
-	
+
 	footer p {
 		font-size: small;
 		padding: 0;
 		align-self: flex-end;
 	}
 
-	
+
 /*----Subpage 1 Code for 768MQ----*/
 
 
@@ -585,18 +647,29 @@ _______________________________________*/
 
 /*----Subpage 2 Code for 768MQ----*/
 
-@media only screen and (min-width: 768px){
-	
 	.maira {
 		padding: 0 40px;
 	}
-	
+
+	.maira h1 {
+		font-size: 3em;
+	}
+
+	.maira h2 {
+		font-size: 2.5em;
+	}
+
+	.maira p {
+		font-size: larger;
+	}
+
 	.season-one,
 	.season-two,
 	.season-three {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: center;
+		justify-content: flex-end;
+
 	}
 
 	.seasons {
@@ -610,50 +683,15 @@ _______________________________________*/
 	}
 
 	.maira aside {
-		padding-left: 10px;
+		padding-left: 20px;
 	}
 
 	.maira img {
+		width: 100%;
 		max-width: 370px;
 	}
 
-	.maira aside img {
-		animation-name: slide-left;
-		animation-duration: 3s;
-	}
-
-	
-
-	@keyframes slide-left {
-		from {
-			transform:translateX(-20px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-
-
-
-	.seasons article {
-		animation-name: slide-right;
-		animation-duration: 3s;
-	}
-
-
-	@keyframes slide-left {
-		from {
-			transform:translateX(-30px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-
-
 }
-
-
 
 
 /*=========== Large Devices ===========*/
@@ -674,7 +712,7 @@ _______________________________________*/
 		padding: 3em 0;
 		text-indent: 45%;
 	}
-	
+
 	.streamlink button {
 		width: 20%;
 		font-size: 1.25em;
@@ -701,7 +739,7 @@ _______________________________________*/
 	.ftrnav ul li a {
 		line-height: 210%;
 	}
-	
+
 	.ftrnav {
 		flex: 0 0 28em;
 	}
@@ -718,17 +756,21 @@ _______________________________________*/
 /*----Subpage 2 Code for 992MQ----*/
 
 	.maira article {
-		max-width: 85%;
 		padding-right: 80px;
 	}
 
+	.maira h1 {
+		font-size: 3.5em;
+	}
 
+	.maira h2 {
+		font-size: 2.75em;
+	}
 
-
-
-
+	.maira p {
+		font-size: 1.25em;
+	}
 }
-
 
 
 /*========== Extra Lg Devices ==========*/
@@ -748,7 +790,7 @@ _______________________________________*/
 		min-height: 60vh;
 		text-indent: 43%;
 	}
-	
+
 	.streamlink button {
 		width: 19%;
 		font-size: 1.375em;
@@ -779,7 +821,7 @@ _______________________________________*/
 		font-size: medium;
 		line-height: 170%;
 	}
-	
+
 	.ftrnav {
 		flex: 0 0 32em;
 	}
@@ -787,7 +829,6 @@ _______________________________________*/
 	footer p {
 		font-size: medium;
 	}
-
 
 
 /*----Subpage 1 Code for 1200MQ----*/
@@ -799,10 +840,5 @@ _______________________________________*/
 
 
 /*----Subpage 2 Code for 1200MQ----*/
-
-
-
-
-
 
 }
