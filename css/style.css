@@ -265,13 +265,8 @@ figure img[alt="Season 4 Pic"] {
 footer {
 	display: block;
 	background-color: #000000;
-	max-height: 11em;
 	margin: 1.75em 0 0;
 	padding: 1.5em 10%;
-}
-
-.ftrwrap {
-	min-height: 10vh;
 }
 
 .ftrnav ul li a {
@@ -291,7 +286,6 @@ footer p {
 	padding: .35em 0 0;
 	text-align: right;
 }
-
 
 
 /*=================================
@@ -539,15 +533,28 @@ _______________________________________*/
 		margin: 1.75em 34% 4.4em;
 	}
 
+	footer {
+		display: inline-block;
+		width: 100%;
+		padding: 1.5em 5% 2em 10%;
+		vertical-align: top;
+	}
+
+	.ftrnav {
+		float: left;
+		width: 25%;
+	}
+
 	.ftrnav ul li a {
 		line-height: 220%;
 		font-size: small;
 	}
 
 	footer p {
-		font-family: 'Ubuntu', sans-serif;
+		float: left;
+		width: 65%;
 		font-size: x-small;
-		padding: .01em 0 0;
+		padding: 9em 0 0;
 	}
 
 
