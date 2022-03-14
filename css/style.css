@@ -135,7 +135,6 @@ p {
 }
 
 #navright {
-	position: relative;
 	float: right;
 	width: 38%;
 	vertical-align: top;
@@ -179,6 +178,10 @@ p {
 	vertical-align: top;
 }
 
+.streamlink img[alt="Season 4 Characters"] {
+	display: none;
+}
+
 .streamlink button {
 	position: absolute;
 	top: 83%;
@@ -197,40 +200,6 @@ p {
 .streamlink button:hover, button:active {
 	background-color: #48a0a7;
 }
-
-/*---------------------tbd-------------------------------
-.streamlink {
-	flex: 1;
-}
-
-.homestream {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	height: 40vh;
-	background: #000000 url("/images/hero.jpg") no-repeat center;
-	background-size: contain;
-	padding: 3.5em 0;
-	text-align: center;
-	text-indent: 40%;
-}
-
-.streamlink button {
-	position: sticky;
-	bottom: 4rem;
-	width: 18%;
-	font-size: .563em;
-	font-weight: bold;
-	background: #c1dadc;
-	border: .09em solid #000000;
-	border-radius: .4em;
-	padding: .43em 0;
-}
-
-.streamlink button:hover, button:active {
-	background-color: #48a0a7;
-}
-----------------------------------------------------------*/
 
 .mbhome aside {
 	display: block;
@@ -457,9 +426,8 @@ _______________________________________*/
 @media only screen and (min-width: 320px) {
 
 	#hamitems {
-		position: absolute;
-/*---------------		position: sticky;
-		top: 0;    ---------------------------*/
+		position: sticky;
+		top: 0;
 		width: 100%;
 		background-color: #000000;
 		border-radius: 0 0 0 .25em;
@@ -556,23 +524,6 @@ _______________________________________*/
 		font-size: 1.5em;
 		padding: .43em 0;
 	}
-
-	
-	/*---------------------tbd-------------------------------
-	.homestream {
-		height: 57vh;
-		background-size: contain;
-		padding: 5em 0;
-		margin-bottom: .75em;
-	}
-
-	.streamlink button {
-		width: 20%;
-		font-size: .75em;
-		letter-spacing: .07em;
-		padding: .4em 2%;
-	}
-	-------------------------------------------------------*/
 
 	figure img[alt="Season 4 Pic"] {
 		max-width: 70%;
@@ -710,15 +661,24 @@ _______________________________________*/
 		}
 	}
 
-	.homestream {
-		height: 60vh;
-		padding: 6em 0;
+	.homestream img[alt="Hero Characters Cropped"] {
+		display: none;
+	}
+	
+	.streamlink img[alt="Season 4 Characters"] {
+		display: unset;
+		background: #000000;
+		max-width: 100%;
+		height: auto;
+		vertical-align: top;
 	}
 
 	.streamlink button {
-		width: 18%;
-		font-size: .875em;
-		padding: .4em 1%;
+		top: 83%;
+		left: 61%;
+		width: 22%;
+		font-size: 1.5em;
+		padding: .16em 0;
 	}
 
 	.mbhome aside figure:before {
@@ -726,7 +686,7 @@ _______________________________________*/
 	}
 
 	.mbhome aside, article {
-		padding: 3em 0 0
+		padding: 2em 0 0;
 	}
 
 	.mbhome aside {
@@ -743,7 +703,7 @@ _______________________________________*/
 	}
 
 	.mbsmpic figcaption {
-		font-size: 1em;
+		font-size: 1.125em;
 		padding: 1em 0 3em;
 		opacity: 58%;
 	}
@@ -834,7 +794,6 @@ _______________________________________*/
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: flex-end;
-
 	}
 
 	.seasons {
@@ -858,7 +817,6 @@ _______________________________________*/
 
 }
 
-
 /*=========== Large Devices ===========*/
 /* w/font guidelines:
 
@@ -881,20 +839,35 @@ _______________________________________*/
 		font-size: 1.125em;
 	}
 
-	.homestream {
-		background-size: cover;
-		padding: 3em 0;
-		text-indent: 45%;
+	.streamlink button {
+		top: 84%;
+		left: 62%;
+		width: 20%;
+		font-size: 1.563em;
+		padding: .20em 0;
 	}
 
-	.streamlink button {
-		width: 20%;
+	.mbhome aside, article {
+		padding: 1.5em 0 0;
+	}
+
+	.mbhome aside {
+		width: 53%;
+		float: left;
+	}
+
+	figure img[alt="Season 4 Pic"] {
+		max-width: 63%;
+	}
+
+	.mbsmpic figcaption {
 		font-size: 1.25em;
-		letter-spacing: .1em;
+		padding: 1em 0 3em;
 	}
 
 	.mbhome article {
-		border-top: 4em solid #ffffff;
+		width: 41%;
+		border-top: 5.5em solid #ffffff;
 	}
 
 	.mbhome article h1 {
@@ -972,30 +945,34 @@ _______________________________________*/
 		font-size: 1.25em;
 	}
 
-	.homestream {
-		min-height: 60vh;
-		text-indent: 43%;
+	.streamlink button {
+		top: 85%;
+		left: 63%;
+		width: 18%;
+		font-size: 1.625em;
+		padding: .23em 0;
 	}
 
-	.streamlink button {
-		width: 19%;
-		font-size: 1.375em;
+	figure img[alt="Season 4 Pic"] {
+		max-width: 60%;
 	}
 
 	.mbsmpic figcaption {
-		font-size: 1.125em;
+		font-size: 1.25em;
 	}
 	
 	.mbhome article {
+		width: 35%;
 		border-top: 7em solid #ffffff;
 	}
 
 	.mbhome article h1 {
 		font-size: 3.5em;
+		letter-spacing: -.05em;
 	}
 
 	.mbhome article p {
-		font-size: 1.5em;
+		font-size: 1.625em;
 	}
 
 	.mbmore > a {
