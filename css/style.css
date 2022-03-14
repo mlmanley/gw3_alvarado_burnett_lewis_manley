@@ -184,8 +184,8 @@ p {
 
 .streamlink button {
 	position: absolute;
-	top: 83%;
-	left: 31%;
+	top: 87%;
+	left: 48%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	width: 35%;
@@ -518,8 +518,8 @@ _______________________________________*/
 	}
 	
 	.streamlink button {
-		top: 84%;
-		left: 29%;
+		top: 87%;
+		left: 49%;
 		width: 31%;
 		font-size: 1.5em;
 		padding: .43em 0;
@@ -667,15 +667,15 @@ _______________________________________*/
 	
 	.streamlink img[alt="Season 4 Characters"] {
 		display: unset;
-		background: #000000;
+		background: #000000 cover no-repeat;
 		max-width: 100%;
 		height: auto;
 		vertical-align: top;
 	}
 
 	.streamlink button {
-		top: 83%;
-		left: 61%;
+		top: 89%;
+		left: 72%;
 		width: 22%;
 		font-size: 1.5em;
 		padding: .16em 0;
@@ -840,8 +840,8 @@ _______________________________________*/
 	}
 
 	.streamlink button {
-		top: 84%;
-		left: 62%;
+		top: 89%;
+		left: 72%;
 		width: 20%;
 		font-size: 1.563em;
 		padding: .20em 0;
@@ -946,8 +946,8 @@ _______________________________________*/
 	}
 
 	.streamlink button {
-		top: 85%;
-		left: 63%;
+		top: 88%;
+		left: 72%;
 		width: 18%;
 		font-size: 1.625em;
 		padding: .23em 0;
