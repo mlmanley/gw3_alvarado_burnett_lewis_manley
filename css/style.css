@@ -160,9 +160,40 @@ p {
 
 .mbhome {
 	display: block;
-	position: fixed;
 }
 
+.streamlink {
+	position: relative;
+	width: 100%;
+}
+
+.homestream img[alt="Hero Characters Cropped"] {
+	background: #000000;
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.streamlink button {
+	position: absolute;
+	top: 76%;
+	left: 31%;
+	transform: translate (-50%, -50%);
+	-ms-transform: translate (-50%, -50%);
+	width: 35%;
+	font-size: .875em;
+	font-weight: bold;
+	background: #c1dadc;
+	border: .09em solid #000000;
+	border-radius: .4em;
+	padding: .45em 0;
+}
+
+.streamlink button:hover, button:active {
+	background-color: #48a0a7;
+}
+
+/*---------------------tbd-------------------------------
 .streamlink {
 	flex: 1;
 }
@@ -194,6 +225,7 @@ p {
 .streamlink button:hover, button:active {
 	background-color: #48a0a7;
 }
+----------------------------------------------------------*/
 
 .mbhome aside {
 	display: block;
@@ -411,7 +443,6 @@ _______________________________________*/
 		position: sticky;
 		top: 0;
 		background-color: #000000;
-		opacity: 80%;
 		z-index: 2;
 	}
 
