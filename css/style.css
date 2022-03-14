@@ -686,7 +686,7 @@ _______________________________________*/
 		width: 45%;
 		float: left;
 		background-color: #ffffff;
-		border-top:  2.25em solid #ffffff;
+		border-top: 2.25em solid #ffffff;
 	}
 
 	.mbhome article h1 { 
@@ -826,6 +826,10 @@ _______________________________________*/
 		letter-spacing: .1em;
 	}
 
+	.mbhome article {
+		border-top: 4em solid #ffffff;
+	}
+
 	.mbhome article h1 {
 		font-size: 3em;
 	}
@@ -915,6 +919,10 @@ _______________________________________*/
 		font-size: 1.125em;
 	}
 	
+	.mbhome article {
+		border-top: 7em solid #ffffff;
+	}
+
 	.mbhome article h1 {
 		font-size: 3.5em;
 	}
