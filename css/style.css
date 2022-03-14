@@ -631,13 +631,15 @@ _______________________________________*/
 	}
 
 	#hamitems a:hover {
+		color: #86bdc2;
 		font-weight: bolder;
 		background-color: #000000;
 	}
 
 	#hamitems a:active {
+		color: #ffffff;
 		font-weight: bolder;
-		background-color: rgba(193, 218, 220, 75%);
+		background-color: #000000;
 	}
 
 	#navright label, #hamburger {
