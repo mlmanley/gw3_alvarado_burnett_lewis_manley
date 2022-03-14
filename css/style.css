@@ -67,7 +67,9 @@ body {
 
 header {
 	width: 100%;
-	height: 5em;
+	height: 6em;
+	background-color: #000000;
+	border-bottom: .25em solid #000000;
 }
 
 h1 {
@@ -119,13 +121,22 @@ p {
 
 .logo {
 	float: left;
-	width: 33%;
+	width: 39%;
 	vertical-align: top;
+	margin: .5em 0 0 6%;
+}
+
+.logo a:hover, .logo a:active {
+	background-color: #000000;
+}
+
+.logo img[alt="Stranger Things Logo"] {
+	max-width: 100%;
 }
 
 #navright {
 	float: right;
-	width: 64%;
+	width: 38%;
 	vertical-align: top;
 	text-align: right;
 	font-family: 'Ubuntu', sans-serif;
@@ -153,35 +164,37 @@ p {
 
 .mbhome {
 	display: block;
-	position: fixed;
 }
 
 .streamlink {
-	flex: 1;
+	position: relative;
+	width: 100%;
 }
 
-.homestream {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	height: 40vh;
-	background: #000000 url("/images/hero.jpg") no-repeat center;
-	background-size: contain;
-	padding: 3.5em 0;
-	text-align: center;
-	text-indent: 40%;
+.homestream img[alt="Hero Characters Cropped"] {
+	background: #000000;
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.streamlink img[alt="Season 4 Characters"] {
+	display: none;
 }
 
 .streamlink button {
-	position: sticky;
-	bottom: 4rem;
-	width: 18%;
-	font-size: .563em;
+	position: absolute;
+	top: 87%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 35%;
+	font-size: .875em;
 	font-weight: bold;
 	background: #c1dadc;
 	border: .09em solid #000000;
 	border-radius: .4em;
-	padding: .43em 0;
+	padding: .45em 0;
 }
 
 .streamlink button:hover, button:active {
@@ -191,7 +204,7 @@ p {
 .mbhome aside {
 	display: block;
 	background-color: #ffffff;
-	border-top:  1.7em solid #ffffff;
+	border-top:  3.25em solid #ffffff;
 }
 
 .mbhome aside figure:before {
@@ -207,14 +220,14 @@ p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 55%;
-	margin: 1.5em 0 0;
-	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
+	max-width: 70%;
+	margin: 3em 0 0;
 }
 
 .mbsmpic figcaption {
-	font-size: .625em;
-	padding: 1.25em 0 1em;
+	font-size: .75em;
+	letter-spacing: .02em;
+	padding: .5em 0 4em;
 	opacity: 70%;
 }
 
@@ -239,7 +252,7 @@ figure img[alt="Season 4 Pic"] {
 .mbmore > a {
 	display: block;
 	padding: .1em 3%;
-	margin: 0 28%;
+	margin: 1.3em 28% 3.75em;
 	text-align: center;
 	text-decoration: none;
 	color:#000000;
@@ -258,13 +271,8 @@ figure img[alt="Season 4 Pic"] {
 footer {
 	display: block;
 	background-color: #000000;
-	max-height: 11em;
 	margin: 1.75em 0 0;
 	padding: 1.5em 10%;
-}
-
-.ftrwrap {
-	min-height: 10vh;
 }
 
 .ftrnav ul li a {
@@ -276,15 +284,26 @@ footer {
 	text-decoration: none;
 }
 
+.ftrnav ul li a:hover {
+	background-color: #000000;
+	font-weight: bolder;
+	color: #86bdc2;
+}
+
+.ftrnav ul li a:active {
+	background-color: #000000;
+	font-weight: bolder;
+	color: #48a0a7;
+}
+
 footer p {
     font-family: 'Ubuntu', sans-serif;
 	color: #ffffff;
 	font-size: xx-small;
 	font-weight: lighter;
-	padding: .35em 0 0;
+	padding: .5em 0 0;
 	text-align: right;
 }
-
 
 
 /*=================================
@@ -407,11 +426,11 @@ _______________________________________*/
 @media only screen and (min-width: 320px) {
 
 	#hamitems {
-		width: 100%;
 		position: sticky;
 		top: 0;
-		background-color: #ffffff;
-		opacity: 90%;
+		width: 100%;
+		background-color: #000000;
+		border-radius: 0 0 0 .25em;
 		z-index: 2;
 	}
 
@@ -419,8 +438,8 @@ _______________________________________*/
 		box-sizing: border-box;
 		display: block;
 		width: 100%;
-		padding: 1em 7%;
-		color: #212226;
+		padding: 1em 10% 1em 5%;
+		color: #ffffff;
 		font-weight: bold;
 		text-decoration: none;
 		text-align: right;
@@ -428,19 +447,19 @@ _______________________________________*/
 
 	#hamitems a:hover {
 		font-weight: bolder;
-		background-color: rgba(193, 218, 220, 75%);
+		background-color: #86bdc2;
 	}
 
 	#hamitems a:active {
 		font-weight: bolder;
-		background-color: rgba(255, 255, 255, 75%);
+		background-color: #48a0a7;
 	}
 
 	#navright label {
 		display: inline-block;
-		color: #212226;
+		color: #ffffff;
 		font-size: 2.5em;
-		padding: .5em 7% 0;
+		padding: .5em 10% 0;
 	}
 
 	#hamitems {
@@ -484,37 +503,60 @@ _______________________________________*/
 
 @media only screen and (min-width: 576px) {
 
-	.homestream {
-		height: 57vh;
-		background-size: contain;
-		padding: 5em 0;
+	header {
+		height: 6.25em;
+		border-bottom: .25em solid #000000;
 	}
 
+	.logo {
+		width: 31%;
+		margin: .5em 0 0 5%;
+	}
+	
+	#navright {
+		width: 38%;
+	}
+	
 	.streamlink button {
-		width: 20%;
-		font-size: .75em;
-		letter-spacing: .07em;
-		padding: .4em 2%;
-	}
-
-	.mbsmpic figure {
-		text-align: center;
+		top: 87%;
+		left: 49%;
+		width: 31%;
+		font-size: 1.5em;
+		padding: .43em 0;
 	}
 
 	figure img[alt="Season 4 Pic"] {
-		max-width: 48%;
+		max-width: 70%;
+		margin: 3em 10% 0;
 	}
 
 	.mbsmpic figcaption {
-		font-size: .875em;
+		font-size: 1em;
+		padding: .7em 0 4em;
+	}
+
+	.mbhome aside figure:before {
+		font-size: 2.8em;
 	}
 
 	#mbhdg {
-		margin: 1em 0 .6em 9%;
+		margin: 1.5em 0 .6em 9%;
 	}
 
 	.mbmore > a {
-		margin: 0 34%;
+		margin: 1.75em 34% 4.4em;
+	}
+
+	footer {
+		display: inline-block;
+		width: 100%;
+		padding: 1.5em 5% 2em 10%;
+		vertical-align: top;
+	}
+
+	.ftrnav {
+		float: left;
+		width: 25%;
 	}
 
 	.ftrnav ul li a {
@@ -523,9 +565,10 @@ _______________________________________*/
 	}
 
 	footer p {
-		font-family: 'Ubuntu', sans-serif;
+		float: left;
+		width: 65%;
 		font-size: x-small;
-		padding: .01em 0 0;
+		padding: 9em 0 0;
 	}
 
 
@@ -557,6 +600,21 @@ _______________________________________*/
 _______________________________________*/
 
 @media only screen and (min-width: 768px) {
+
+	header {
+		height: 6.25em;
+	}
+
+	.logo {
+		width: 24%;
+		margin: .5em 0 0 6%;
+	}
+	
+	#navright {
+		width: 70%;
+		padding: 2.15em 7%;
+		font-size: 1em;
+	}
 
 	#hamitems {
 		display: flex;
@@ -590,10 +648,6 @@ _______________________________________*/
 		background-color: #000000;
 	}
 
-	#navright {
-		padding: 2.25em 7%;
-	}
-
 	.navanim {
 		animation: grow 1.7s backwards ease;
 	}
@@ -607,15 +661,24 @@ _______________________________________*/
 		}
 	}
 
-	.homestream {
-		height: 60vh;
-		padding: 6em 0;
+	.homestream img[alt="Hero Characters Cropped"] {
+		display: none;
+	}
+	
+	.streamlink img[alt="Season 4 Characters"] {
+		display: unset;
+		background: #000000 cover no-repeat;
+		max-width: 100%;
+		height: auto;
+		vertical-align: top;
 	}
 
 	.streamlink button {
-		width: 18%;
-		font-size: .875em;
-		padding: .4em 1%;
+		top: 89%;
+		left: 72%;
+		width: 22%;
+		font-size: 1.5em;
+		padding: .16em 0;
 	}
 
 	.mbhome aside figure:before {
@@ -623,7 +686,7 @@ _______________________________________*/
 	}
 
 	.mbhome aside, article {
-		padding: 3em 0 0
+		padding: 2em 0 0;
 	}
 
 	.mbhome aside {
@@ -633,12 +696,24 @@ _______________________________________*/
 		background-color: #ffffff;
 	}
 
+	figure img[alt="Season 4 Pic"] {
+		max-width: 70%;
+		margin: 0;
+		box-shadow: .8em .7em rgba(193, 190, 190, 45%);
+	}
+
+	.mbsmpic figcaption {
+		font-size: 1.125em;
+		padding: 1em 0 3em;
+		opacity: 58%;
+	}
+
 	.mbhome article {
 		display: inline;
 		width: 45%;
 		float: left;
 		background-color: #ffffff;
-		border-top:  2.25em solid #ffffff;
+		border-top: 2.25em solid #ffffff;
 	}
 
 	.mbhome article h1 { 
@@ -656,31 +731,27 @@ _______________________________________*/
 	}
 
 	.mbmore > a {
-		margin: 0 30%;
-	}
-
-
-	.mbsmpic figcaption {
-		font-size: 1em;
+		margin: 1.5em 30% 4em;
 	}
 
 	footer {
 		display: flex;
 		flex-flow: column wrap;
-		padding: 1.5em 5% 1.5em 8%;
+		padding: 1.5em 5% 2em 8%;
+		border-bottom: .3em solid #000000;
 	}
 
 	.ftrwrap {
 		display: flex;
 	}
 
-	.ftrnav ul li a {
-		line-height: 215%;
-	}
-
 	.ftrnav {
 		flex: 1;
-		flex: 0 0 23em;
+		flex: 0 0 15em;
+	}
+
+	.ftrnav ul li a {
+		line-height: 215%;
 		font-size: small;
 	}
 
@@ -723,7 +794,6 @@ _______________________________________*/
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: flex-end;
-
 	}
 
 	.seasons {
@@ -747,7 +817,6 @@ _______________________________________*/
 
 }
 
-
 /*=========== Large Devices ===========*/
 /* w/font guidelines:
 
@@ -761,16 +830,44 @@ _______________________________________*/
 
 @media only screen and (min-width: 992px) {
 
-	.homestream {
-		background-size: cover;
-		padding: 3em 0;
-		text-indent: 45%;
+	header {
+		height: 6.8em;
+	}
+
+	#navright {
+		padding: 2.10em 7%;
+		font-size: 1.125em;
 	}
 
 	.streamlink button {
+		top: 89%;
+		left: 72%;
 		width: 20%;
+		font-size: 1.563em;
+		padding: .20em 0;
+	}
+
+	.mbhome aside, article {
+		padding: 1.5em 0 0;
+	}
+
+	.mbhome aside {
+		width: 53%;
+		float: left;
+	}
+
+	figure img[alt="Season 4 Pic"] {
+		max-width: 63%;
+	}
+
+	.mbsmpic figcaption {
 		font-size: 1.25em;
-		letter-spacing: .1em;
+		padding: 1em 0 3em;
+	}
+
+	.mbhome article {
+		width: 41%;
+		border-top: 5.5em solid #ffffff;
 	}
 
 	.mbhome article h1 {
@@ -782,24 +879,20 @@ _______________________________________*/
 	}
 
 	.mbmore > a {
-		margin: 0 33%;
+		margin: 2.5em 33% 5.75em;
 	}
 
 	footer {
-		padding: 1.5em 8%;
-		max-height: 10em;
-	}
-
-	.ftrwrap {
-		min-height: 8vh;
+		border-bottom: .8em solid #000000;
 	}
 
 	.ftrnav ul li a {
-		line-height: 210%;
+		line-height: 225%;
+		font-size: medium;
 	}
 
-	.ftrnav {
-		flex: 0 0 28em;
+	footer p {
+		font-size: medium;
 	}
 
 
@@ -844,52 +937,64 @@ _______________________________________*/
 
 @media only screen and (min-width: 1200px) {
 
-	.homestream {
-		min-height: 60vh;
-		text-indent: 43%;
+	header {
+		height: 7.5em;
+	}
+
+	#navright {
+		font-size: 1.25em;
 	}
 
 	.streamlink button {
-		width: 19%;
-		font-size: 1.375em;
+		top: 88%;
+		left: 72%;
+		width: 18%;
+		font-size: 1.625em;
+		padding: .23em 0;
+	}
+
+	figure img[alt="Season 4 Pic"] {
+		max-width: 60%;
 	}
 
 	.mbsmpic figcaption {
-		font-size: 1.125em;
+		font-size: 1.25em;
 	}
 	
+	.mbhome article {
+		width: 35%;
+		border-top: 7em solid #ffffff;
+	}
+
 	.mbhome article h1 {
 		font-size: 3.5em;
+		letter-spacing: -.05em;
 	}
 
 	.mbhome article p {
-		font-size: 1.5em;
+		font-size: 1.625em;
 	}
 
 	.mbmore > a {
-		margin: 0 36%;
+		margin: 2em 36% 5.25em;
 	}
 
 	footer {
-		max-height: 10.5em;
-		padding: 1.7em 8%;
-	}
-
-	.ftrwrap {
-		min-height: 10vh;
-	}
-
-	.ftrnav ul li a {
-		font-size: medium;
-		line-height: 170%;
+		border-bottom: 1.25em solid #000000;
 	}
 
 	.ftrnav {
-		flex: 0 0 32em;
+		flex: 0 0 18em;
+	}
+
+	.ftrnav ul li a {
+		line-height: 230%;
+		font-size: large;
 	}
 
 	footer p {
-		font-size: medium;
+		font-size: large;
+		align-self: flex-end;
 	}
 
 
