@@ -67,7 +67,7 @@ body {
 
 header {
 	width: 100%;
-	height: 5.5em;
+	height: 6em;
 	background-color: #000000;
 }
 
@@ -120,9 +120,9 @@ p {
 
 .logo {
 	float: left;
-	width: 58%;
+	width: 40%;
 	vertical-align: top;
-	margin: .7em 0 0 4%;
+	margin: .5em 0 0 6%;
 }
 
 .logo img[alt="Stranger Things Logo"] {
@@ -490,6 +490,15 @@ _______________________________________*/
 
 @media only screen and (min-width: 576px) {
 
+	.logo {
+		width: 31%;
+		margin: .5em 0 0 6%;
+	}
+	
+	#navright {
+		width: 38%;
+	}
+	
 	.homestream {
 		height: 57vh;
 		background-size: contain;
