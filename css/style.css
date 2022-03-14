@@ -198,7 +198,7 @@ p {
 .mbhome aside {
 	display: block;
 	background-color: #ffffff;
-	border-top:  1.7em solid #ffffff;
+	border-top:  3.25em solid #ffffff;
 }
 
 .mbhome aside figure:before {
@@ -214,14 +214,13 @@ p {
 }
 
 figure img[alt="Season 4 Pic"] {
-	max-width: 55%;
-	margin: 1.5em 0 0;
-	box-shadow: 1em .7em rgba(193, 218, 220, 50%);
+	max-width: 70%;
+	margin: 3em 0 0;
 }
 
 .mbsmpic figcaption {
-	font-size: .625em;
-	padding: 1.25em 0 1.5em;
+	font-size: .688em;
+	padding: .5em 0 3em;
 	opacity: 70%;
 }
 
@@ -283,7 +282,7 @@ footer p {
 	color: #ffffff;
 	font-size: xx-small;
 	font-weight: lighter;
-	padding: .35em 0 0;
+	padding: .5em 0 0;
 	text-align: right;
 }
 
@@ -508,17 +507,14 @@ _______________________________________*/
 		padding: .4em 2%;
 	}
 
-	.mbsmpic figure {
-		text-align: center;
-	}
-
 	figure img[alt="Season 4 Pic"] {
-		max-width: 48%;
-		margin: 1.5em 10% 0;
+		max-width: 70%;
+		margin: 3em 10% 0;
 	}
 
 	.mbsmpic figcaption {
-		font-size: .875em;
+		font-size: 1em;
+		opacity: 58%;
 	}
 
 	.mbhome aside figure:before {
@@ -673,6 +669,18 @@ _______________________________________*/
 		background-color: #ffffff;
 	}
 
+	figure img[alt="Season 4 Pic"] {
+		max-width: 70%;
+		margin: 0;
+		box-shadow: .8em .7em rgba(193, 190, 190, 45%);
+	}
+
+	.mbsmpic figcaption {
+		font-size: 1em;
+		padding: 1em 0 3em;
+		opacity: 58%;
+	}
+
 	.mbhome article {
 		display: inline;
 		width: 45%;
@@ -697,10 +705,6 @@ _______________________________________*/
 
 	.mbmore > a {
 		margin: 1.5em 30% 4em;
-	}
-
-	.mbsmpic figcaption {
-		font-size: 1em;
 	}
 
 	footer {
