@@ -69,7 +69,7 @@ header {
 	width: 100%;
 	height: 6em;
 	background-color: #000000;
-	border-bottom: .2em solid #9d0004;
+	border-bottom: .25em solid #000000;
 }
 
 h1 {
@@ -706,20 +706,21 @@ _______________________________________*/
 	footer {
 		display: flex;
 		flex-flow: column wrap;
-		padding: 1.5em 5% 1.5em 8%;
+		padding: 1.5em 5% 2em 8%;
+		border-bottom: .3em solid #000000;
 	}
 
 	.ftrwrap {
 		display: flex;
 	}
 
-	.ftrnav ul li a {
-		line-height: 215%;
-	}
-
 	.ftrnav {
 		flex: 1;
-		flex: 0 0 23em;
+		flex: 0 0 15em;
+	}
+
+	.ftrnav ul li a {
+		line-height: 215%;
 		font-size: small;
 	}
 
@@ -834,20 +835,16 @@ _______________________________________*/
 	}
 
 	footer {
-		padding: 1.5em 8%;
-		max-height: 10em;
-	}
-
-	.ftrwrap {
-		min-height: 8vh;
+		border-bottom: .8em solid #000000;
 	}
 
 	.ftrnav ul li a {
-		line-height: 210%;
+		line-height: 225%;
+		font-size: medium;
 	}
 
-	.ftrnav {
-		flex: 0 0 28em;
+	footer p {
+		font-size: medium;
 	}
 
 
@@ -927,25 +924,21 @@ _______________________________________*/
 	}
 
 	footer {
-		max-height: 10.5em;
-		padding: 1.7em 8%;
-	}
-
-	.ftrwrap {
-		min-height: 10vh;
-	}
-
-	.ftrnav ul li a {
-		font-size: medium;
-		line-height: 170%;
+		border-bottom: 1.25em solid #000000;
 	}
 
 	.ftrnav {
-		flex: 0 0 32em;
+		flex: 0 0 18em;
+	}
+
+	.ftrnav ul li a {
+		line-height: 230%;
+		font-size: large;
 	}
 
 	footer p {
-		font-size: medium;
+		font-size: large;
+		align-self: flex-end;
 	}
 
 
