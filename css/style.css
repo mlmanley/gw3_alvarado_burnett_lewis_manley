@@ -121,9 +121,13 @@ p {
 
 .logo {
 	float: left;
-	width: 40%;
+	width: 39%;
 	vertical-align: top;
 	margin: .5em 0 0 6%;
+}
+
+.logo a:hover, .logo a:active {
+	background-color: #000000;
 }
 
 .logo img[alt="Stranger Things Logo"] {
@@ -131,6 +135,7 @@ p {
 }
 
 #navright {
+	position: relative;
 	float: right;
 	width: 38%;
 	vertical-align: top;
@@ -176,7 +181,7 @@ p {
 
 .streamlink button {
 	position: absolute;
-	top: 76%;
+	top: 83%;
 	left: 31%;
 	transform: translate (-50%, -50%);
 	-ms-transform: translate (-50%, -50%);
@@ -251,8 +256,9 @@ figure img[alt="Season 4 Pic"] {
 }
 
 .mbsmpic figcaption {
-	font-size: .688em;
-	padding: .5em 0 3em;
+	font-size: .75em;
+	letter-spacing: .02em;
+	padding: .5em 0 4em;
 	opacity: 70%;
 }
 
@@ -307,6 +313,18 @@ footer {
 	font-size: x-small;
 	font-weight: lighter;
 	text-decoration: none;
+}
+
+.ftrnav ul li a:hover {
+	background-color: #000000;
+	font-weight: bolder;
+	color: #86bdc2;
+}
+
+.ftrnav ul li a:active {
+	background-color: #000000;
+	font-weight: bolder;
+	color: #48a0a7;
 }
 
 footer p {
@@ -439,10 +457,12 @@ _______________________________________*/
 @media only screen and (min-width: 320px) {
 
 	#hamitems {
+		position: absolute;
+/*---------------		position: sticky;
+		top: 0;    ---------------------------*/
 		width: 100%;
-		position: sticky;
-		top: 0;
 		background-color: #000000;
+		border-radius: 0 0 0 .25em;
 		z-index: 2;
 	}
 
@@ -515,15 +535,30 @@ _______________________________________*/
 
 @media only screen and (min-width: 576px) {
 
+	header {
+		height: 6.25em;
+		border-bottom: .25em solid #000000;
+	}
+
 	.logo {
 		width: 31%;
-		margin: .5em 0 0 6%;
+		margin: .5em 0 0 5%;
 	}
 	
 	#navright {
 		width: 38%;
 	}
 	
+	.streamlink button {
+		top: 84%;
+		left: 29%;
+		width: 31%;
+		font-size: 1.5em;
+		padding: .43em 0;
+	}
+
+	
+	/*---------------------tbd-------------------------------
 	.homestream {
 		height: 57vh;
 		background-size: contain;
@@ -537,6 +572,7 @@ _______________________________________*/
 		letter-spacing: .07em;
 		padding: .4em 2%;
 	}
+	-------------------------------------------------------*/
 
 	figure img[alt="Season 4 Pic"] {
 		max-width: 70%;
@@ -545,7 +581,7 @@ _______________________________________*/
 
 	.mbsmpic figcaption {
 		font-size: 1em;
-		opacity: 58%;
+		padding: .7em 0 4em;
 	}
 
 	.mbhome aside figure:before {
