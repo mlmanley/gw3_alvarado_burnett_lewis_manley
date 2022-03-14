@@ -67,7 +67,8 @@ body {
 
 header {
 	width: 100%;
-	height: 5em;
+	height: 5.5em;
+	background-color: #000000;
 }
 
 h1 {
@@ -119,13 +120,18 @@ p {
 
 .logo {
 	float: left;
-	width: 33%;
+	width: 58%;
 	vertical-align: top;
+	margin: .7em 0 0 4%;
+}
+
+.logo img[alt="Stranger Things Logo"] {
+	max-width: 100%;
 }
 
 #navright {
 	float: right;
-	width: 64%;
+	width: 38%;
 	vertical-align: top;
 	text-align: right;
 	font-family: 'Ubuntu', sans-serif;
@@ -410,8 +416,8 @@ _______________________________________*/
 		width: 100%;
 		position: sticky;
 		top: 0;
-		background-color: #ffffff;
-		opacity: 90%;
+		background-color: #000000;
+		opacity: 80%;
 		z-index: 2;
 	}
 
@@ -419,8 +425,8 @@ _______________________________________*/
 		box-sizing: border-box;
 		display: block;
 		width: 100%;
-		padding: 1em 7%;
-		color: #212226;
+		padding: 1em 10% 1em 5%;
+		color: #ffffff;
 		font-weight: bold;
 		text-decoration: none;
 		text-align: right;
@@ -428,19 +434,19 @@ _______________________________________*/
 
 	#hamitems a:hover {
 		font-weight: bolder;
-		background-color: rgba(193, 218, 220, 75%);
+		background-color: #86bdc2;
 	}
 
 	#hamitems a:active {
 		font-weight: bolder;
-		background-color: rgba(255, 255, 255, 75%);
+		background-color: #48a0a7;
 	}
 
 	#navright label {
 		display: inline-block;
-		color: #212226;
+		color: #ffffff;
 		font-size: 2.5em;
-		padding: .5em 7% 0;
+		padding: .5em 10% 0;
 	}
 
 	#hamitems {
