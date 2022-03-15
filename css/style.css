@@ -307,7 +307,7 @@ footer p {
 
 
 /*=================================
-About
+About (Christina)
 ==================================*/
 
 .about  {
@@ -355,7 +355,14 @@ About
 	margin-bottom: 15px;
 	padding: 2px 5px;
 }
+/*=================================
+About hover image
+==================================*/
+.christina img:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
 
+}
 
 /*=================================
 Previously On Styling
