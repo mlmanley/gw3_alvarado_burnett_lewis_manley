@@ -130,7 +130,7 @@ p {
 	background-color: #000000;
 }
 
-.logo img[alt="Stranger Things Logo"] {
+.logo img[alt="Stranger Things"] {
 	max-width: 100%;
 }
 
@@ -431,7 +431,6 @@ _______________________________________*/
 		width: 100%;
 		background-color: #000000;
 		border-radius: 0 0 0 .25em;
-		z-index: 2;
 	}
 
 	#hamitems a {
@@ -511,10 +510,6 @@ _______________________________________*/
 	.logo {
 		width: 31%;
 		margin: .5em 0 0 5%;
-	}
-	
-	#navright {
-		width: 38%;
 	}
 	
 	.streamlink button {
@@ -612,7 +607,7 @@ _______________________________________*/
 	
 	#navright {
 		width: 70%;
-		padding: 2.15em 7%;
+		padding: 2.15em 3%;
 		font-size: 1em;
 	}
 
@@ -623,21 +618,20 @@ _______________________________________*/
 
 	#hamitems a {
 		padding: 0 6% 0 0;
-		color: #86bdc2;
-		font-weight: bolder;
+		color: #c1dadc;
 		flex-grow: 1;
 		flex-basis: 0;
 		justify-content: flex-end;
 	}
 
 	#hamitems a:hover {
-		color: #86bdc2;
+		color: #c1bebe;
 		font-weight: bolder;
 		background-color: #000000;
 	}
 
 	#hamitems a:active {
-		color: #ffffff;
+		color: #86bdc2;
 		font-weight: bolder;
 		background-color: #000000;
 	}
@@ -837,7 +831,7 @@ _______________________________________*/
 	}
 
 	#navright {
-		padding: 2.10em 7%;
+		padding: 2.1em 3% 2.1em 4%;
 		font-size: 1.125em;
 	}
 
@@ -944,6 +938,7 @@ _______________________________________*/
 	}
 
 	#navright {
+		padding: 2.1em 4% 2.1em 6%;
 		font-size: 1.25em;
 	}
 
