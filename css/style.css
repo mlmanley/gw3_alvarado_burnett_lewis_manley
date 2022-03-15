@@ -1,4 +1,4 @@
-/*========== CSS Reset ==========*/
+/*============ CSS Reset ============*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,13 +43,13 @@ table {
 	border-spacing: 0;
 }
 
-/*=================================
+/*==============================+===
 Custom CSS
-==================================*/
+===============================+===*/
 
 
-/*======= Universal Styling =======
-==================================*/
+/*======= Universal Styling ==+=====
+===============by MB===============*/
 
 * {
     box-sizing: border-box;
@@ -117,7 +117,7 @@ p {
 }
 
 
-/*======= Hdr/Menu Styling =======*/
+/*===== Hdr/Menu Styling by MB =====*/
 
 .logo {
 	float: left;
@@ -144,7 +144,7 @@ p {
 }
 
 
-/*======= Universal  Styling =======*/
+/*==== Universal  Styling by MB ====*/
 
 .navanim {
 	animation: grow 1s backwards ease;
@@ -160,7 +160,9 @@ p {
 }
 
 
-/*======= Main Styling =======*/
+/*=================================
+Home Styling by Marilyn Burnett
+==================================*/
 
 .mbhome {
 	display: block;
@@ -266,7 +268,7 @@ figure img[alt="Season 4 Pic"] {
 }
 
 
-/*======= Footer Styling =======*/
+/*======= Footer Styling by MB =======*/
 
 footer {
 	display: block;
@@ -307,7 +309,7 @@ footer p {
 
 
 /*=================================
-About
+About Styling by Christina Lewis
 ==================================*/
 
 .about  {
@@ -357,9 +359,9 @@ About
 }
 
 
-/*=================================
-Previously On Styling
-==================================*/
+/*===================================
+Previously On Styling by Maira Manley
+====================================*/
 
 .maira {
 	max-width: 1200px;
@@ -812,6 +814,7 @@ _______________________________________*/
 	}
 
 }
+
 
 /*=========== Large Devices ===========*/
 /* w/font guidelines:
