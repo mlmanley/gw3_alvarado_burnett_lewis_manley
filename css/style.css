@@ -226,6 +226,19 @@ figure img[alt="Season 4 Pic"] {
 	margin: 3em 0 0;
 }
 
+.mbsmpic img:hover {
+	animation: fadeOut 7s ease;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
 .mbsmpic figcaption {
 	font-size: .75em;
 	letter-spacing: .02em;
@@ -805,23 +818,26 @@ _______________________________________*/
 	}
 
 	.seasons {
-		margin: 42px 0;
+		margin: 100px 0;
 		max-width: 100%;
+		align-items: center;
 	}
 
 	.maira article {
-		max-width: 60%;
-		padding-right: 50px;
-	}
+		max-width: 52%;
+    	padding-right: 25px;
+}
+
 
 	.maira aside {
 		padding-left: 20px;
 	}
 
-	.maira img {
+	/* .maira img {
+		margin-top: 10px;
 		width: 100%;
 		max-width: 370px;
-	}
+	} */
 
 }
 
@@ -928,6 +944,16 @@ _______________________________________*/
 
 	.maira p {
 		font-size: 1.25em;
+	}
+
+	.maira img {
+		width: 100%;
+	}
+
+	.maira img {
+		margin-top: 10px;
+		width: 100%;
+		max-width: 370px;
 	}
 }
 
