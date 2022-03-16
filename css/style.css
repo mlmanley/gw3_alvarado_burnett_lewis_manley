@@ -366,6 +366,9 @@ About hover image
 
 }
 
+.christina img {
+	max-width: 100%;
+}
 /*===================================
 Previously On Styling by Maira Manley
 ====================================*/
