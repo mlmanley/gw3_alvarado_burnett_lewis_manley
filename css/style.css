@@ -226,6 +226,19 @@ figure img[alt="Season 4 Pic"] {
 	margin: 3em 0 0;
 }
 
+.mbsmpic img:hover {
+	animation: fadeOut 7s ease;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
 .mbsmpic figcaption {
 	font-size: .75em;
 	letter-spacing: .02em;
@@ -366,6 +379,9 @@ About hover image
 
 }
 
+.christina img {
+	max-width: 100%;
+}
 /*===================================
 Previously On Styling by Maira Manley
 ====================================*/
