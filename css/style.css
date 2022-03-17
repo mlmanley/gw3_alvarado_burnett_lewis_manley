@@ -456,6 +456,7 @@ _______________________________________*/
 		width: 100%;
 		background-color: #000000;
 		border-radius: 0 0 0 .25em;
+		z-index: 2;
 	}
 
 	#hamitems a {
@@ -650,13 +651,13 @@ _______________________________________*/
 	}
 
 	#hamitems a:hover {
-		color: #c1bebe;
+		color: #86bdc2;
 		font-weight: bolder;
 		background-color: #000000;
 	}
 
 	#hamitems a:active {
-		color: #86bdc2;
+		color: #48ada7;
 		font-weight: bolder;
 		background-color: #000000;
 	}
