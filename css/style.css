@@ -508,19 +508,6 @@ _______________________________________*/
 		display: none;
 	}
 
-
-/*----Subpage 1 Code for 320MQ----*/
-
-
-
-
-
-/*----Subpage 2 Code for 320MQ----*/
-
-
-
-
-
 }
 
 
@@ -600,20 +587,6 @@ _______________________________________*/
 		font-size: x-small;
 		padding: 9em 0 0;
 	}
-
-
-/*----Subpage 1 Code for 576MQ----*/
-
-
-
-
-
-
-/*----Subpage 2 Code for 576MQ----*/
-
-
-
-
 
 }
 
@@ -698,7 +671,7 @@ _______________________________________*/
 	
 	.streamlink img[alt="Season 4 Characters"] {
 		display: unset;
-		background: #000000 cover no-repeat;
+		background: #000000;
 		max-width: 100%;
 		height: auto;
 		vertical-align: top;
@@ -793,15 +766,7 @@ _______________________________________*/
 	}
 
 
-/*----Subpage 1 Code for 768MQ----*/
-
-
-
-
-
-
-
-/*----Subpage 2 Code for 768MQ----*/
+/*----Previously On for 768MQ----*/
 
 	.maira {
 		padding: 0 40px;
@@ -842,8 +807,6 @@ _______________________________________*/
 	.maira aside {
 		padding-left: 20px;
 	}
-
-
 
 }
 
@@ -926,15 +889,7 @@ _______________________________________*/
 	}
 
 
-/*----Subpage 1 Code for 992MQ----*/
-
-
-
-
-
-
-
-/*----Subpage 2 Code for 992MQ----*/
+/*----Previously On for 992MQ----*/
 
 	.maira article {
 		padding-right: 80px;
@@ -1036,8 +991,5 @@ _______________________________________*/
 		font-size: large;
 		align-self: flex-end;
 	}
-
-
-
 
 }
