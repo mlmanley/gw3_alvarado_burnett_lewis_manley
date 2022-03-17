@@ -325,8 +325,18 @@ footer p {
 About (Christina)
 ==================================*/
 
-.about  {
+.about {
 	padding: 40px;
+	animation: pulse 5s ease;
+}
+
+@keyframes pulse {
+	0% {
+		color: rgba(157, 0, 4, 20%);
+	}
+	100% {
+		color: #9d0004;
+	}
 }
 
 .image-list-small img,
@@ -370,18 +380,17 @@ About (Christina)
 	margin-bottom: 15px;
 	padding: 2px 5px;
 }
-/*=================================
-About hover image
-==================================*/
+
 .christina img:hover {
     opacity: 0.8;
     transition: 0.3s ease;
-
 }
 
 .christina img {
 	max-width: 100%;
 }
+
+
 /*===================================
 Previously On Styling by Maira Manley
 ====================================*/
